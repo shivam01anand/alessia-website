@@ -284,18 +284,20 @@ export default function PortfolioPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-serif text-4xl md:text-5xl mb-6">
-              Your Event Could Be Next
+            <p className="text-xs tracking-[0.3em] uppercase text-[#C4856A] mb-6">
+              Availability
+            </p>
+            <h2 className="font-serif text-4xl md:text-5xl mb-4">
+              Currently accepting select projects.
             </h2>
-            <p className="text-[#4A4543] mb-10 max-w-xl mx-auto">
-              Let&apos;s create something that belongs in this portfolio — and more
-              importantly, in your memories.
+            <p className="text-[#4A4543] mb-10">
+              Dubai · Europe · Middle East
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-[#C4856A] hover:bg-[#D4A08A] text-white px-8 py-4 text-sm tracking-widest uppercase transition-all duration-300"
+              className="inline-block border border-[#2C2825] hover:bg-[#2C2825] hover:text-[#F7F4F0] text-[#2C2825] px-10 py-4 text-sm tracking-widest uppercase transition-all duration-300"
             >
-              Start a Conversation
+              Inquire
             </Link>
           </motion.div>
         </div>

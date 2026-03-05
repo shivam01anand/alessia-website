@@ -13,29 +13,26 @@ export default function ContactCTA() {
           viewport={{ once: true }}
         >
           <p className="text-xs tracking-[0.3em] uppercase text-[#C4856A] mb-6">
-            Let&apos;s Create Together
+            Work With Me
           </p>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-8">
-            Ready to create something
-            <br />
-            <span className="text-[#C4856A]">unforgettable?</span>
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6">
+            Have something in mind?
           </h2>
-          <p className="text-[#4A4543] max-w-xl mx-auto mb-10">
-            Whether you&apos;re planning a brand activation, private celebration,
-            or exclusive event, I&apos;d love to hear your vision.
+          <p className="text-[#4A4543] max-w-md mx-auto mb-10">
+            Brand activations. Private celebrations. Destination events.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="bg-[#C4856A] hover:bg-[#D4A08A] text-white px-8 py-4 text-sm tracking-widest uppercase transition-all duration-300"
+              className="bg-[#2C2825] hover:bg-[#4A4543] text-[#F7F4F0] px-10 py-4 text-sm tracking-widest uppercase transition-all duration-300"
             >
-              Start a Conversation
+              Inquire
             </Link>
             <a
               href="https://wa.me/393925251663"
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-[#2C2825] hover:bg-[#2C2825] hover:text-[#F7F4F0] text-[#2C2825] px-8 py-4 text-sm tracking-widest uppercase transition-all duration-300"
+              className="border border-[#2C2825]/30 hover:border-[#2C2825] text-[#2C2825] px-10 py-4 text-sm tracking-widest uppercase transition-all duration-300"
             >
               WhatsApp
             </a>

@@ -321,17 +321,17 @@ export default function ServicesPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-serif text-4xl md:text-5xl mb-8">
-              Ready to Begin?
+            <h2 className="font-serif text-4xl md:text-5xl mb-4">
+              Discuss your event.
             </h2>
-            <p className="text-[#F7F4F0]/70 mb-10 max-w-xl mx-auto">
-              Share your vision. I&apos;ll handle everything else.
+            <p className="text-[#F7F4F0]/50 mb-10">
+              Currently based in Dubai. Available worldwide.
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-[#C4856A] hover:bg-[#D4A08A] text-white px-8 py-4 text-sm tracking-widest uppercase transition-all duration-300"
+              className="inline-block border border-[#F7F4F0]/30 hover:bg-[#F7F4F0] hover:text-[#2C2825] text-[#F7F4F0] px-10 py-4 text-sm tracking-widest uppercase transition-all duration-300"
             >
-              Start a Conversation
+              Inquire
             </Link>
           </motion.div>
         </div>
