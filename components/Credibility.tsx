@@ -42,7 +42,7 @@ export default function Credibility() {
             </h2>
             <div className="space-y-5 text-[#F7F4F0]/70 leading-relaxed">
               <p>
-                It started at Sottovento in Porto Cervo — Sardinia&apos;s most
+                It started at Sottovento in Porto Cervo, Sardinia&apos;s most
                 legendary club. That&apos;s where I learned that luxury isn&apos;t
                 about excess. It&apos;s about making people feel extraordinary.
               </p>
@@ -54,7 +54,7 @@ export default function Credibility() {
               </p>
               <p>
                 Now based in Dubai, I bring that same fashion-house precision to
-                every event — whether it&apos;s a brand activation, destination
+                every event, whether it&apos;s a brand activation, destination
                 wedding, or intimate private celebration.
               </p>
             </div>

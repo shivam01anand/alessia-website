@@ -43,7 +43,7 @@ export default function Hero() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
             >
-              From Valentino&apos;s ateliers to Formula E circuits — creating
+              From Valentino&apos;s ateliers to Formula E circuits, creating
               unforgettable moments for fashion houses and discerning clients.
             </motion.p>
 

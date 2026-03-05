@@ -145,7 +145,7 @@ export default function ContactForm() {
           required
           rows={5}
           className="w-full bg-transparent border-b border-[#2C2825]/20 focus:border-[#C4856A] py-3 outline-none transition-colors resize-none"
-          placeholder="Share details about your event — the occasion, guest count, desired atmosphere, any inspiration..."
+          placeholder="Share details about your event: the occasion, guest count, desired atmosphere, any inspiration..."
         />
       </div>
 

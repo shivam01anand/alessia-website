@@ -11,7 +11,7 @@ const services = [
     title: "Fashion Brand Activations",
     tagline: "Where runway meets reality",
     description:
-      "Three years with IF Experience taught me how the world's most demanding fashion houses expect their events to be executed. From Valentino to Chanel to Dior — I understand that every detail communicates brand values.",
+      "Three years with IF Experience taught me how the world's most demanding fashion houses expect their events to be executed. From Valentino to Chanel to Dior, I learned that every detail communicates brand values.",
     features: [
       "Collection launches",
       "Press previews",
@@ -27,7 +27,7 @@ const services = [
     title: "Destination Weddings",
     tagline: "La dolce vita, wherever you are",
     description:
-      "Working with Vincenzo D'Ascanio — one of Italy's most sought-after wedding designers — I learned that destination weddings aren't just events. They're multi-day experiences that need to flow like a beautiful story.",
+      "Working with Vincenzo D'Ascanio, one of Italy's most sought-after wedding designers, taught me that destination weddings aren't just events. They're multi-day experiences that need to flow like a beautiful story.",
     features: [
       "Multi-day planning",
       "Guest experiences",
@@ -75,7 +75,7 @@ const services = [
     title: "Luxury Private Events",
     tagline: "Intimate moments, extraordinary execution",
     description:
-      "Whether it's a milestone birthday in Dubai, an engagement party in Rome, or a family celebration anywhere in the Mediterranean — I bring fashion-house standards to the most personal occasions.",
+      "Whether it's a milestone birthday in Dubai, an engagement party in Rome, or a family celebration anywhere in the Mediterranean. I bring fashion-house standards to the most personal occasions.",
     features: [
       "Milestone celebrations",
       "Engagement parties",
@@ -99,7 +99,7 @@ const process = [
     step: "02",
     title: "Concept",
     description:
-      "I develop a tailored concept and detailed proposal. Every element is considered — from venue to florals to the music at 11pm.",
+      "I develop a tailored concept and detailed proposal. Every element is considered, from venue to florals to the music at 11pm.",
   },
   {
     step: "03",
@@ -111,7 +111,7 @@ const process = [
     step: "04",
     title: "Creation",
     description:
-      "On the day, I manage everything so you can be fully present. You're a guest at your own event — that's how it should be.",
+      "On the day, I manage everything so you can be fully present. You're a guest at your own event. That's how it should be.",
   },
 ];
 
@@ -135,7 +135,7 @@ export default function ServicesPage() {
             <p className="text-[#4A4543] text-lg leading-relaxed">
               Fashion houses taught me that luxury is in the details. Seven years
               across Rome, Milan, Mykonos, Dubai, and Riyadh taught me how to
-              execute them — flawlessly, every time.
+              execute them. Flawlessly, every time.
             </p>
           </motion.div>
         </div>
@@ -258,7 +258,7 @@ export default function ServicesPage() {
             </h2>
             <p className="text-[#4A4543] leading-relaxed mb-10 max-w-2xl mx-auto">
               With established vendor networks and venue relationships across the
-              UAE, Saudi Arabia, Italy, France, Greece, and Portugal — I can execute
+              UAE, Saudi Arabia, Italy, France, Greece, and Portugal, I can execute
               your event wherever your vision takes us.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-[#4A4543]">
@@ -303,7 +303,7 @@ export default function ServicesPage() {
             <p className="text-[#4A4543] leading-relaxed mb-6">
               Every event is unique. Pricing depends on scope, scale, location, and
               specific requirements. I work with clients across a range of
-              budgets — always delivering fashion-house quality and personal attention.
+              budgets, always delivering fashion-house quality and personal attention.
             </p>
             <p className="text-[#4A4543] leading-relaxed">
               Let&apos;s start with a conversation about what you&apos;re envisioning.

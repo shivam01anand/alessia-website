@@ -16,16 +16,16 @@ const timeline = [
   {
     year: "2022–2023",
     role: "Coordinator & Manager",
-    company: "Addmind Hospitality — Babylon Dubai & Moni Mykonos",
+    company: "Addmind Hospitality",
     description:
-      "Started as coordinator at Babylon DFC in Dubai, then promoted to Manager at Moni — one of Mykonos' most exclusive private members' clubs.",
+      "Started as coordinator at Babylon DIFC in Dubai, then promoted to Manager at Moni, one of Mykonos' most exclusive private members' clubs.",
   },
   {
     year: "2022",
     role: "Project Manager",
     company: "Italia Polo Challenge, Sardinia",
     description:
-      "Led a 15-day luxury polo event — managing hotels, private transfers, dining, and exclusive experiences for international HNWI guests.",
+      "Led a 15-day luxury polo event, managing hotels, private transfers, dining, and exclusive experiences for international HNWI guests.",
   },
   {
     year: "2022",
@@ -53,7 +53,7 @@ const timeline = [
     role: "PR Intern",
     company: "Sottovento Club, Porto Cervo",
     description:
-      "Where it all began — Sardinia's most legendary nightclub since 1979. The Mediterranean's original temple of la dolce vita.",
+      "Where it all began. Sardinia's most legendary nightclub since 1979, the Mediterranean's original temple of la dolce vita.",
   },
 ];
 
@@ -71,12 +71,12 @@ const values = [
   {
     title: "Mediterranean to Gulf",
     description:
-      "From Porto Cervo to Mykonos to Dubai to Riyadh — I understand how luxury translates across cultures while keeping its soul.",
+      "From Porto Cervo to Mykonos to Dubai to Riyadh. I understand how luxury translates across cultures while keeping its soul.",
   },
   {
     title: "Boutique Approach",
     description:
-      "I don't take on dozens of events. I take on yours — fully present, personally invested, completely dedicated.",
+      "I don't take on dozens of events. I take on yours. Fully present, personally invested, completely dedicated.",
   },
 ];
 
@@ -132,18 +132,18 @@ export default function AboutPage() {
               <div className="space-y-6 text-[#4A4543] leading-relaxed">
                 <p className="text-lg">
                   Seven years creating moments for fashion houses, private clients,
-                  and the world&apos;s most demanding venues — from the runways of
+                  and the world&apos;s most demanding venues, from the runways of
                   Rome to the circuits of Riyadh.
                 </p>
                 <p>
                   I started at Sottovento in Porto Cervo, where I learned that true
-                  luxury isn&apos;t about showing off — it&apos;s about feeling
+                  luxury isn&apos;t about showing off. It&apos;s about feeling
                   extraordinary. From there, I spent three years with IF Experience,
                   orchestrating events for Valentino, Chanel, Dior, Moncler, and
                   Golden Goose.
                 </p>
                 <p>
-                  That fashion-house precision now shapes everything I do — whether
+                  That fashion-house precision now shapes everything I do, whether
                   it&apos;s a Formula E activation in Saudi Arabia, a private wedding
                   in St. Tropez, or an intimate celebration in Dubai.
                 </p>
@@ -275,7 +275,7 @@ export default function AboutPage() {
             </h2>
             <p className="text-[#F7F4F0]/70 mb-10 max-w-xl mx-auto">
               Whether it&apos;s a brand activation, private celebration, destination
-              wedding, or something entirely unique — I&apos;d love to hear your vision.
+              wedding, or something entirely unique.
             </p>
             <Link
               href="/contact"

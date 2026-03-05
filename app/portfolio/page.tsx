@@ -16,7 +16,7 @@ const categories = [
 const projects = [
   {
     id: 1,
-    title: "Valentino Roma — Brand Activation",
+    title: "Valentino Roma",
     category: "Fashion & Luxury",
     location: "Rome, Italy",
     year: "2021",
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Chanel — Private Preview",
+    title: "Chanel Private Preview",
     category: "Fashion & Luxury",
     location: "Milan, Italy",
     year: "2022",
@@ -66,7 +66,7 @@ const projects = [
   },
   {
     id: 6,
-    title: "Moni Mykonos — Season Opening",
+    title: "Moni Mykonos",
     category: "Hospitality & Nightlife",
     location: "Mykonos, Greece",
     year: "2023",
@@ -76,7 +76,7 @@ const projects = [
   },
   {
     id: 7,
-    title: "Dior — Private Dinner",
+    title: "Dior Private Dinner",
     category: "Fashion & Luxury",
     location: "Florence, Italy",
     year: "2021",
@@ -86,7 +86,7 @@ const projects = [
   },
   {
     id: 8,
-    title: "Gianvito Rossi — Gala Dinner",
+    title: "Gianvito Rossi Gala",
     category: "Fashion & Luxury",
     location: "Rome, Italy",
     year: "2020",
@@ -116,7 +116,7 @@ const projects = [
   },
   {
     id: 11,
-    title: "Moncler — Winter Collection",
+    title: "Moncler Winter Collection",
     category: "Fashion & Luxury",
     location: "Milan, Italy",
     year: "2021",
@@ -161,7 +161,7 @@ export default function PortfolioPage() {
             </h1>
             <p className="text-[#4A4543] max-w-2xl text-lg">
               Seven years of fashion events, destination weddings, motorsport
-              activations, and hospitality experiences — from Rome to Riyadh.
+              activations, and hospitality experiences across Rome, Dubai, and Riyadh.
             </p>
           </motion.div>
         </div>
