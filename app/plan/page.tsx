@@ -550,8 +550,111 @@ export default function MarketingPlanPage() {
         </div>
       </section>
 
+      {/* Mentor Note */}
+      <section className="py-20 md:py-28 bg-[#F7F4F0]">
+        <div className="max-w-3xl mx-auto px-6 lg:px-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <p className="text-xs tracking-[0.3em] uppercase text-[#C4856A] mb-6">
+              A Note on the Hard Part
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl mb-10">
+              What nobody tells you about building a name in this industry.
+            </h2>
+            
+            <div className="space-y-6 text-[#4A4543] leading-relaxed">
+              <p>
+                I moved from Milan to Dubai eleven years ago. I remember the first year vividly. You know you can do the work. You&apos;ve done it at the highest level. But saying it out loud feels wrong. Posting about yourself feels desperate. Calling yourself an expert feels arrogant.
+              </p>
+              
+              <p>
+                So you stay quiet. You wait for the work to speak for itself. You tell yourself that good work gets noticed.
+              </p>
+              
+              <p>
+                It doesn&apos;t. Not here. Not in a city where everyone is loud and new people arrive every week with flashy portfolios and big claims. The modest ones get overlooked. The ones who &quot;let the work speak&quot; get drowned out by the ones who won&apos;t shut up about their work.
+              </p>
+              
+              <p>
+                That&apos;s not a call to become someone you&apos;re not. But it&apos;s a reality check.
+              </p>
+
+              <div className="my-10 py-8 border-t border-b border-[#2C2825]/10">
+                <p className="font-serif text-xl text-[#2C2825] mb-6">
+                  Here is what I know about your situation:
+                </p>
+                <ul className="space-y-4">
+                  <li>
+                    <strong>You worked for houses that reject 99% of applicants.</strong> Valentino, Chanel, Dior do not hand responsibility to people who aren&apos;t exceptional. You were there for three years. That&apos;s not luck. That&apos;s earned.
+                  </li>
+                  <li>
+                    <strong>You ran one of Mykonos&apos; most exclusive venues.</strong> Moni doesn&apos;t promote people who can&apos;t handle pressure, discretion, and clientele who expect perfection. You were the manager, not an assistant.
+                  </li>
+                  <li>
+                    <strong>You started at Sottovento.</strong> Most people in Dubai have never heard of it. But anyone who knows Mediterranean nightlife knows that&apos;s where you learn hospitality at its highest form. You absorbed that before you were twenty-five.
+                  </li>
+                  <li>
+                    <strong>You moved countries three times to grow.</strong> Rome to Sardinia to Mykonos to Dubai. Each move required starting over, proving yourself again, adapting to new cultures. That resilience is rare.
+                  </li>
+                </ul>
+              </div>
+
+              <p>
+                I&apos;m not saying this to make you feel good. I&apos;m saying it because you need to understand what you&apos;re actually working with.
+              </p>
+              
+              <p>
+                Most event planners in Dubai learned on the job here. You learned at fashion weeks in Milan and Florence. That&apos;s a different standard. When you feel like an imposter, remember: you&apos;re not competing with their experience. You&apos;re bringing something they don&apos;t have.
+              </p>
+
+              <div className="my-10 py-8 border-t border-b border-[#2C2825]/10">
+                <p className="font-serif text-xl text-[#2C2825] mb-6">
+                  The mindset shifts that helped me:
+                </p>
+                <ul className="space-y-4">
+                  <li>
+                    <strong>Self-promotion is client service.</strong> If someone needs a luxury event manager with fashion credentials, and they can&apos;t find you because you&apos;re too modest to be visible, you&apos;re not being humble. You&apos;re failing them before they even have a chance to hire you.
+                  </li>
+                  <li>
+                    <strong>Your website isn&apos;t bragging. It&apos;s information.</strong> You&apos;re not claiming to be the best. You&apos;re showing what you&apos;ve done, where you&apos;ve worked, and how to reach you. That&apos;s basic professionalism. The only thing worse than talking about yourself is having nothing to show when someone asks.
+                  </li>
+                  <li>
+                    <strong>The discomfort doesn&apos;t go away. You just do it anyway.</strong> I still feel strange posting about my events. Eleven years in. But I do it because I know what happens when I don&apos;t: someone less qualified gets the call instead.
+                  </li>
+                  <li>
+                    <strong>You don&apos;t need to be loud. You need to be findable.</strong> There&apos;s a difference between shouting and being present. Your website, a clean LinkedIn, consistent Instagram. That&apos;s not aggressive marketing. That&apos;s just existing professionally in 2026.
+                  </li>
+                  <li>
+                    <strong>One yes changes everything.</strong> You don&apos;t need hundreds of clients. You need one Chalhoub project, one high-profile wedding, one venue partnership that leads to referrals. This is a word-of-mouth industry. Your job isn&apos;t to convince the masses. It&apos;s to be ready when the right person looks.
+                  </li>
+                </ul>
+              </div>
+
+              <p>
+                Dubai is hard on newcomers. It rewards confidence and penalizes hesitation. But it also rewards quality once you break through. The city forgets quickly, but it also gives second chances quickly. If you&apos;re not getting traction now, you can reset and try differently next season.
+              </p>
+              
+              <p>
+                The Italian community here is tight. Use it. The fashion brands already know your name from Europe, even if you don&apos;t realize it. Event managers talk to each other. Your reputation from IF Experience and Moni precedes you more than you think.
+              </p>
+              
+              <p>
+                The hardest part of this industry isn&apos;t the events. It&apos;s showing up consistently when you don&apos;t feel like it, posting when you&apos;d rather stay quiet, and sending the email when you&apos;re not sure they&apos;ll respond.
+              </p>
+              
+              <p className="font-serif text-xl text-[#2C2825] mt-10">
+                You have the credentials. Now the only job is to stop hiding them.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Footer */}
-      <section className="py-12 bg-[#F7F4F0] border-t border-[#2C2825]/10">
+      <section className="py-12 bg-[#EDE8E1] border-t border-[#2C2825]/10">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
           <p className="text-[#4A4543] text-sm">
             This document is private. Bookmark it and revisit monthly.
