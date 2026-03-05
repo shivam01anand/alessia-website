@@ -55,15 +55,15 @@ export default function Hero() {
             >
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center bg-[#2C2825] hover:bg-[#C4856A] text-white px-8 py-4 text-sm tracking-widest uppercase transition-all duration-300"
+                className="inline-flex items-center justify-center bg-[#2C2825] hover:bg-[#C4856A] text-white px-10 py-4 text-sm tracking-widest uppercase transition-all duration-300"
               >
-                Start a Conversation
+                Get in Touch
               </Link>
               <Link
                 href="/portfolio"
-                className="inline-flex items-center justify-center border border-[#2C2825] hover:bg-[#2C2825] hover:text-white text-[#2C2825] px-8 py-4 text-sm tracking-widest uppercase transition-all duration-300"
+                className="inline-flex items-center justify-center border border-[#2C2825]/30 hover:border-[#2C2825] text-[#2C2825] px-10 py-4 text-sm tracking-widest uppercase transition-all duration-300"
               >
-                View Work
+                Portfolio
               </Link>
             </motion.div>
 
