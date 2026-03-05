@@ -23,7 +23,7 @@ export default function Hero() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              Luxury Event Design · Dubai
+              Luxury Event Management · Dubai
             </motion.p>
 
             <motion.h1

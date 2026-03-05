@@ -5,14 +5,14 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Alessia Forcellati | Luxury Event Designer | Dubai",
-  description: "Italian luxury event designer based in Dubai. Trained by Valentino, Chanel, and Dior. Creating unforgettable moments for fashion houses, private clients, and exclusive venues.",
-  keywords: "luxury event planner Dubai, Italian event designer, fashion event management, Dubai events, Valentino events, luxury private events, destination weddings Dubai",
+  title: "Alessia Forcellati | Luxury Event Manager | Dubai",
+  description: "Italian luxury event manager based in Dubai. Trained by Valentino, Chanel, and Dior. Creating unforgettable moments for fashion houses, private clients, and exclusive venues.",
+  keywords: "luxury event manager Dubai, Italian event manager, fashion event management, Dubai events, Valentino events, luxury private events, destination weddings Dubai",
   authors: [{ name: "Alessia Forcellati" }],
   metadataBase: new URL("https://alessiaforcellati.com"),
   openGraph: {
     title: "Alessia Forcellati",
-    description: "Luxury Event Designer. Dubai.",
+    description: "Luxury Event Manager. Dubai.",
     type: "website",
     locale: "en_US",
     siteName: "Alessia Forcellati",
@@ -21,14 +21,14 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Alessia Forcellati - Luxury Event Designer",
+        alt: "Alessia Forcellati - Luxury Event Manager",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Alessia Forcellati",
-    description: "Luxury Event Designer. Dubai.",
+    description: "Luxury Event Manager. Dubai.",
     images: ["/og-image.jpg"],
   },
 };
