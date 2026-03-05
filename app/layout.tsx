@@ -3,6 +3,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import LayoutWrapper from "@/components/LayoutWrapper";
 
 export const metadata: Metadata = {
   title: "Alessia Forcellati | Luxury Event Manager | Dubai",
@@ -42,7 +43,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-[#F7F4F0] text-[#2C2825] antialiased">
         <Navigation />
-        <main>{children}</main>
+        <main>
+          <LayoutWrapper>{children}</LayoutWrapper>
+        </main>
         <Footer />
         <WhatsAppButton />
       </body>

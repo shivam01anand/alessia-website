@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 0;
   height: 1px;
   background: var(--terracotta);
-  transition: width 0.3s ease;
+  transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .hover-underline:hover::after {
@@ -147,4 +147,208 @@ h1, h2, h3, h4, h5, h6 {
 
 .animate-scroll:hover {
   animation-play-state: paused;
+}
+
+/* Luxury transition timing - slower, more considered */
+.transition-luxury {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Button enhancements */
+.btn-primary {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 4px 20px rgba(44, 40, 37, 0.15);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  border-width: 1px;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.btn-secondary:hover {
+  box-shadow: 0 2px 12px rgba(44, 40, 37, 0.08);
+}
+
+/* Enhanced image hover */
+.image-hover {
+  overflow: hidden;
+}
+
+.image-hover img {
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              filter 0.6s ease;
+}
+
+.image-hover:hover img {
+  transform: scale(1.03);
+  filter: brightness(1.05);
+}
+
+/* Card hover with border accent */
+.card-hover {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card-hover::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--terracotta);
+  transform: scaleY(0);
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card-hover:hover::before {
+  transform: scaleY(1);
+}
+
+/* Typography refinements */
+.tracking-luxury {
+  letter-spacing: 0.35em;
+}
+
+/* Uppercase label tracking - slightly wider for luxury feel */
+.tracking-wide-luxury {
+  letter-spacing: 0.35em;
+}
+
+/* Section padding - more generous spacing */
+.section-luxury {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 768px) {
+  .section-luxury {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+/* Subtle text shadow for headings on dark backgrounds */
+.text-glow {
+  text-shadow: 0 0 40px rgba(196, 133, 106, 0.15);
+}
+
+/* Smoother scroll animation for logo bar */
+.animate-scroll-smooth {
+  animation: scroll 40s linear infinite;
+  will-change: transform;
+}
+
+/* Page transition overlay */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.page-transition-exit {
+  opacity: 1;
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+/* Form input focus enhancement */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--terracotta) !important;
+}
+
+/* Smoother input placeholder */
+input::placeholder,
+textarea::placeholder {
+  color: var(--charcoal-light);
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  opacity: 0.3;
+}
+
+/* Subtle grain texture overlay for dark sections */
+.grain-overlay {
+  position: relative;
+}
+
+.grain-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* Hero text animation enhancement */
+.hero-text-reveal {
+  animation: heroReveal 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes heroReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    letter-spacing: 0.02em;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Refined link underline animation */
+.link-elegant {
+  position: relative;
+  display: inline-block;
+}
+
+.link-elegant::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--terracotta);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.link-elegant:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Warmer terracotta for certain accents */
+.text-terracotta-warm {
+  color: #C78B70;
+}
+
+/* Selection on dark backgrounds */
+.dark-selection::selection {
+  background: var(--terracotta-light);
+  color: var(--warm-charcoal);
 }

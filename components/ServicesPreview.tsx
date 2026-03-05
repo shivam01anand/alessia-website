@@ -50,13 +50,11 @@ export default function ServicesPreview() {
             Services
           </p>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6">
-            Creating Moments
-            <br />
-            <span className="text-[#C4856A]">That Matter</span>
+            Services
           </h2>
           <p className="text-[#4A4543] max-w-2xl mx-auto">
             From intimate private celebrations to grand fashion house activations,
-            every event is crafted with meticulous attention to detail.
+            each event is crafted to be unforgettable.
           </p>
         </motion.div>
 
@@ -75,19 +73,19 @@ export default function ServicesPreview() {
                 src={service.image}
                 alt={service.title}
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                className="object-cover transition-all duration-[800ms] ease-out group-hover:scale-[1.03] group-hover:brightness-110"
               />
-              
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#2C2825]/90 via-[#2C2825]/40 to-transparent" />
+
+              {/* Overlay - shifts warmer on hover */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#2C2825]/90 via-[#2C2825]/40 to-transparent transition-all duration-[600ms] group-hover:from-[#2C2825]/85 group-hover:via-[#C4856A]/20" />
 
               {/* Content */}
               <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                <service.icon className="w-8 h-8 text-[#C4856A] mb-4" />
-                <h3 className="font-serif text-2xl md:text-3xl text-[#F7F4F0] mb-3">
+                <service.icon className="w-8 h-8 text-[#C4856A] mb-4 transition-transform duration-[400ms] group-hover:scale-110" />
+                <h3 className="font-serif text-2xl md:text-3xl text-[#F7F4F0] mb-3 transition-transform duration-[400ms] group-hover:translate-x-1">
                   {service.title}
                 </h3>
-                <p className="text-[#F7F4F0]/70 text-sm leading-relaxed max-w-md">
+                <p className="text-[#F7F4F0]/70 text-sm leading-relaxed max-w-md transition-all duration-[400ms] group-hover:text-[#F7F4F0]/85">
                   {service.description}
                 </p>
               </div>

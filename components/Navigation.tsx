@@ -48,7 +48,7 @@ export default function Navigation() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="text-sm tracking-widest uppercase hover-underline transition-colors hover:text-[#C4856A]"
+                  className="text-sm tracking-widest uppercase hover-underline transition-all duration-[400ms] hover:text-[#C4856A] hover:tracking-[0.15em]"
                 >
                   {link.label}
                 </Link>
@@ -115,10 +115,10 @@ export default function Navigation() {
               <div className="px-6 py-8 border-t border-[#EDE8E1]">
                 <p className="text-sm text-[#4A4543]">Dubai, UAE</p>
                 <a
-                  href="mailto:hello@alessiaforcellati.com"
+                  href="mailto:alexforce@yahoo.it"
                   className="text-sm text-[#C4856A] hover-underline"
                 >
-                  hello@alessiaforcellati.com
+                  alexforce@yahoo.it
                 </a>
               </div>
             </div>

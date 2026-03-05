@@ -9,7 +9,6 @@ const brands = [
   { name: "Dior", logo: "/logos/dior-logo.svg" },
   { name: "Moncler", logo: "/logos/moncler-logo.svg" },
   { name: "Golden Goose", logo: "/logos/golden-goose-logo.svg" },
-  { name: "Gianvito Rossi", logo: "/logos/gianvito-rossi-logo.svg" },
   { name: "Formula E", logo: "/logos/formula-e-logo.svg" },
 ];
 

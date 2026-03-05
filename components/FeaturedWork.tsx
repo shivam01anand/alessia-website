@@ -69,12 +69,12 @@ export default function FeaturedWork() {
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="object-cover transition-all duration-[800ms] ease-out group-hover:scale-[1.03] group-hover:brightness-105"
                   />
-                  <div className="absolute inset-0 bg-[#2C2825]/0 group-hover:bg-[#2C2825]/20 transition-colors duration-500" />
-                  
+                  <div className="absolute inset-0 bg-[#2C2825]/0 group-hover:bg-[#2C2825]/10 transition-colors duration-[600ms]" />
+
                   {/* Hover Arrow */}
-                  <div className="absolute top-6 right-6 w-12 h-12 bg-[#F7F4F0] rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute top-6 right-6 w-12 h-12 bg-[#F7F4F0] rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-[400ms] ease-out group-hover:translate-x-0 translate-x-2">
                     <ArrowUpRight className="w-5 h-5 text-[#2C2825]" />
                   </div>
                 </div>

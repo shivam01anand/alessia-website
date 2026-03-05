@@ -55,13 +55,13 @@ export default function Hero() {
             >
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center bg-[#2C2825] hover:bg-[#C4856A] text-white px-10 py-4 text-sm tracking-widest uppercase transition-all duration-300"
+                className="inline-flex items-center justify-center bg-[#2C2825] hover:bg-[#C4856A] text-white px-10 py-4 text-sm tracking-widest uppercase transition-all duration-[400ms] ease-out hover:shadow-lg hover:-translate-y-0.5"
               >
-                Get in Touch
+                Inquire
               </Link>
               <Link
                 href="/portfolio"
-                className="inline-flex items-center justify-center border border-[#2C2825]/30 hover:border-[#2C2825] text-[#2C2825] px-10 py-4 text-sm tracking-widest uppercase transition-all duration-300"
+                className="inline-flex items-center justify-center border border-[#2C2825]/30 hover:border-[#2C2825] text-[#2C2825] px-10 py-4 text-sm tracking-widest uppercase transition-all duration-[400ms] ease-out hover:shadow-sm"
               >
                 Portfolio
               </Link>

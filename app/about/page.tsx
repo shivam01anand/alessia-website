@@ -162,8 +162,8 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            &ldquo;I don&apos;t create events. I create the feeling you&apos;ll remember
-            <span className="text-[#C4856A]"> forever</span>.&rdquo;
+            The details they notice. The moments they
+            <span className="text-[#C4856A]"> don&apos;t forget</span>.
           </motion.blockquote>
         </div>
       </section>
@@ -180,7 +180,7 @@ export default function AboutPage() {
             <p className="text-xs tracking-[0.3em] uppercase text-[#C4856A] mb-4">
               Philosophy
             </p>
-            <h2 className="font-serif text-4xl md:text-5xl">What Sets Me Apart</h2>
+            <h2 className="font-serif text-4xl md:text-5xl">Approach</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
@@ -281,7 +281,7 @@ export default function AboutPage() {
               href="/contact"
               className="inline-block bg-[#C4856A] hover:bg-[#D4A08A] text-white px-8 py-4 text-sm tracking-widest uppercase transition-all duration-300"
             >
-              Start a Conversation
+              Inquire
             </Link>
           </motion.div>
         </div>

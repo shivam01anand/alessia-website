@@ -16,7 +16,7 @@ export default function ContactCTA() {
             Work With Me
           </p>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6">
-            Have something in mind?
+            Discuss an Event
           </h2>
           <p className="text-[#4A4543] max-w-md mx-auto mb-10">
             Brand activations. Private celebrations. Destination events.

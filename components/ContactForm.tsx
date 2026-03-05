@@ -38,10 +38,10 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
+        <div className="relative group">
           <label
             htmlFor="name"
-            className="block text-xs tracking-[0.2em] uppercase text-[#4A4543] mb-3"
+            className="block text-xs tracking-[0.2em] uppercase text-[#4A4543] mb-3 transition-colors duration-300 group-focus-within:text-[#C4856A]"
           >
             Your Name *
           </label>
@@ -50,14 +50,14 @@ export default function ContactForm() {
             id="name"
             name="name"
             required
-            className="w-full bg-transparent border-b border-[#2C2825]/20 focus:border-[#C4856A] py-3 outline-none transition-colors"
+            className="w-full bg-transparent border-b-2 border-[#2C2825]/20 focus:border-[#C4856A] py-3 outline-none transition-all duration-[400ms]"
             placeholder="Full name"
           />
         </div>
-        <div>
+        <div className="relative group">
           <label
             htmlFor="email"
-            className="block text-xs tracking-[0.2em] uppercase text-[#4A4543] mb-3"
+            className="block text-xs tracking-[0.2em] uppercase text-[#4A4543] mb-3 transition-colors duration-300 group-focus-within:text-[#C4856A]"
           >
             Email Address *
           </label>
@@ -66,17 +66,17 @@ export default function ContactForm() {
             id="email"
             name="email"
             required
-            className="w-full bg-transparent border-b border-[#2C2825]/20 focus:border-[#C4856A] py-3 outline-none transition-colors"
+            className="w-full bg-transparent border-b-2 border-[#2C2825]/20 focus:border-[#C4856A] py-3 outline-none transition-all duration-[400ms]"
             placeholder="your@email.com"
           />
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
+        <div className="relative group">
           <label
             htmlFor="phone"
-            className="block text-xs tracking-[0.2em] uppercase text-[#4A4543] mb-3"
+            className="block text-xs tracking-[0.2em] uppercase text-[#4A4543] mb-3 transition-colors duration-300 group-focus-within:text-[#C4856A]"
           >
             Phone / WhatsApp
           </label>
@@ -84,14 +84,14 @@ export default function ContactForm() {
             type="tel"
             id="phone"
             name="phone"
-            className="w-full bg-transparent border-b border-[#2C2825]/20 focus:border-[#C4856A] py-3 outline-none transition-colors"
+            className="w-full bg-transparent border-b-2 border-[#2C2825]/20 focus:border-[#C4856A] py-3 outline-none transition-all duration-[400ms]"
             placeholder="+971 XX XXX XXXX"
           />
         </div>
-        <div>
+        <div className="relative group">
           <label
             htmlFor="eventType"
-            className="block text-xs tracking-[0.2em] uppercase text-[#4A4543] mb-3"
+            className="block text-xs tracking-[0.2em] uppercase text-[#4A4543] mb-3 transition-colors duration-300 group-focus-within:text-[#C4856A]"
           >
             Event Type *
           </label>
@@ -99,7 +99,7 @@ export default function ContactForm() {
             id="eventType"
             name="eventType"
             required
-            className="w-full bg-transparent border-b border-[#2C2825]/20 focus:border-[#C4856A] py-3 outline-none transition-colors cursor-pointer"
+            className="w-full bg-transparent border-b-2 border-[#2C2825]/20 focus:border-[#C4856A] py-3 outline-none transition-all duration-[400ms] cursor-pointer"
           >
             <option value="">Select event type</option>
             <option value="brand-activation">Brand Activation</option>
@@ -112,17 +112,17 @@ export default function ContactForm() {
         </div>
       </div>
 
-      <div>
+      <div className="relative group">
         <label
           htmlFor="budget"
-          className="block text-xs tracking-[0.2em] uppercase text-[#4A4543] mb-3"
+          className="block text-xs tracking-[0.2em] uppercase text-[#4A4543] mb-3 transition-colors duration-300 group-focus-within:text-[#C4856A]"
         >
           Estimated Budget (AED)
         </label>
         <select
           id="budget"
           name="budget"
-          className="w-full bg-transparent border-b border-[#2C2825]/20 focus:border-[#C4856A] py-3 outline-none transition-colors cursor-pointer"
+          className="w-full bg-transparent border-b-2 border-[#2C2825]/20 focus:border-[#C4856A] py-3 outline-none transition-all duration-[400ms] cursor-pointer"
         >
           <option value="">Prefer not to say</option>
           <option value="50k-100k">50,000 - 100,000</option>
@@ -132,10 +132,10 @@ export default function ContactForm() {
         </select>
       </div>
 
-      <div>
+      <div className="relative group">
         <label
           htmlFor="message"
-          className="block text-xs tracking-[0.2em] uppercase text-[#4A4543] mb-3"
+          className="block text-xs tracking-[0.2em] uppercase text-[#4A4543] mb-3 transition-colors duration-300 group-focus-within:text-[#C4856A]"
         >
           Tell Me About Your Vision *
         </label>
@@ -144,16 +144,16 @@ export default function ContactForm() {
           name="message"
           required
           rows={5}
-          className="w-full bg-transparent border-b border-[#2C2825]/20 focus:border-[#C4856A] py-3 outline-none transition-colors resize-none"
+          className="w-full bg-transparent border-b-2 border-[#2C2825]/20 focus:border-[#C4856A] py-3 outline-none transition-all duration-[400ms] resize-none"
           placeholder="Share details about your event: the occasion, guest count, desired atmosphere, any inspiration..."
         />
       </div>
 
-      <div className="pt-4">
+      <div className="pt-6">
         <button
           type="submit"
           disabled={isLoading}
-          className="group bg-[#C4856A] hover:bg-[#D4A08A] disabled:bg-[#C4856A]/50 text-white px-8 py-4 text-sm tracking-widest uppercase transition-all duration-300 inline-flex items-center gap-3"
+          className="group bg-[#C4856A] hover:bg-[#D4A08A] disabled:bg-[#C4856A]/50 text-white px-10 py-4 text-sm tracking-widest uppercase transition-all duration-[400ms] ease-out inline-flex items-center gap-3 hover:shadow-lg hover:-translate-y-0.5"
         >
           {isLoading ? (
             <>
@@ -162,7 +162,7 @@ export default function ContactForm() {
           ) : (
             <>
               Send Inquiry
-              <Send className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              <Send className="w-4 h-4 transition-transform duration-[400ms] group-hover:translate-x-1" />
             </>
           )}
         </button>

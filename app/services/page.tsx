@@ -91,27 +91,27 @@ const services = [
 const process = [
   {
     step: "01",
-    title: "Conversation",
+    title: "Listen",
     description:
-      "We start with your vision. What's the feeling you want to create? Who are the guests? What matters most to you?",
+      "Your vision, your guests, the feeling you want to create. I need to understand before I can design.",
   },
   {
     step: "02",
-    title: "Concept",
+    title: "Envision",
     description:
-      "I develop a tailored concept and detailed proposal. Every element is considered, from venue to florals to the music at 11pm.",
+      "A tailored concept takes shape. Every element considered, from venue to florals to the music at midnight.",
   },
   {
     step: "03",
-    title: "Curation",
+    title: "Curate",
     description:
-      "I assemble the perfect team of vendors and partners, leveraging relationships built across Rome, Milan, Mykonos, Dubai, and Riyadh.",
+      "The right team, the right partners. Relationships built across Rome, Milan, Mykonos, Dubai, and Riyadh.",
   },
   {
     step: "04",
-    title: "Creation",
+    title: "Execute",
     description:
-      "On the day, I manage everything so you can be fully present. You're a guest at your own event. That's how it should be.",
+      "On the day, I manage everything. You are a guest at your own event. That is how it should be.",
   },
 ];
 
@@ -134,8 +134,7 @@ export default function ServicesPage() {
             </h1>
             <p className="text-[#4A4543] text-lg leading-relaxed">
               Fashion houses taught me that luxury is in the details. Seven years
-              across Rome, Milan, Mykonos, Dubai, and Riyadh taught me how to
-              execute them. Flawlessly, every time.
+              taught me how to execute them.
             </p>
           </motion.div>
         </div>
@@ -227,13 +226,19 @@ export default function ServicesPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ delay: index * 0.15 }}
               >
-                <span className="font-serif text-7xl text-[#C4856A]/20">
-                  {item.step}
-                </span>
-                <h3 className="font-serif text-2xl mt-2 mb-4">{item.title}</h3>
-                <p className="text-[#F7F4F0]/70 text-sm leading-relaxed">
+                {/* Elegant step indicator */}
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="w-8 h-8 rounded-full border border-[#C4856A]/40 flex items-center justify-center text-xs text-[#C4856A]">
+                    {item.step}
+                  </span>
+                  {index < process.length - 1 && (
+                    <div className="hidden lg:block flex-1 h-px bg-[#C4856A]/20" />
+                  )}
+                </div>
+                <h3 className="font-serif text-2xl mb-4">{item.title}</h3>
+                <p className="text-[#F7F4F0]/60 text-sm leading-relaxed">
                   {item.description}
                 </p>
               </motion.div>
@@ -298,16 +303,10 @@ export default function ServicesPage() {
               Investment
             </p>
             <h2 className="font-serif text-4xl md:text-5xl mb-8">
-              Tailored to Your Vision
+              Investment
             </h2>
-            <p className="text-[#4A4543] leading-relaxed mb-6">
-              Every event is unique. Pricing depends on scope, scale, location, and
-              specific requirements. I work with clients across a range of
-              budgets, always delivering fashion-house quality and personal attention.
-            </p>
             <p className="text-[#4A4543] leading-relaxed">
-              Let&apos;s start with a conversation about what you&apos;re envisioning.
-              From there, I&apos;ll provide a detailed proposal with transparent pricing.
+              Every event is unique. Reach out to discuss scope and investment.
             </p>
           </motion.div>
         </div>
