@@ -9,17 +9,27 @@ export const metadata: Metadata = {
   description: "Italian luxury event designer based in Dubai. Trained by Valentino, Chanel, and Dior. Creating unforgettable moments for fashion houses, private clients, and exclusive venues.",
   keywords: "luxury event planner Dubai, Italian event designer, fashion event management, Dubai events, Valentino events, luxury private events, destination weddings Dubai",
   authors: [{ name: "Alessia Forcellati" }],
+  metadataBase: new URL("https://alessiaforcellati.com"),
   openGraph: {
-    title: "Alessia Forcellati | Luxury Event Designer",
-    description: "Italian elegance meets Dubai grandeur. Luxury event design for fashion houses and discerning clients.",
+    title: "Alessia Forcellati",
+    description: "Luxury Event Designer. Dubai.",
     type: "website",
     locale: "en_US",
     siteName: "Alessia Forcellati",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Alessia Forcellati - Luxury Event Designer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alessia Forcellati | Luxury Event Designer",
-    description: "Italian elegance meets Dubai grandeur. Luxury event design for fashion houses and discerning clients.",
+    title: "Alessia Forcellati",
+    description: "Luxury Event Designer. Dubai.",
+    images: ["/og-image.jpg"],
   },
 };
 
