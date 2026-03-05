@@ -24,7 +24,6 @@ export default function Credibility() {
                 className="object-cover"
               />
             </div>
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 border border-[#C4856A]/30" />
           </motion.div>
 
           {/* Content */}
