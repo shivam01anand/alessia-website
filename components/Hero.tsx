@@ -90,7 +90,7 @@ export default function Hero() {
                 src="/images/alessia/hero-mykonos.jpg"
                 alt="Alessia Forcellati"
                 fill
-                className="object-cover object-[center_35%]"
+                className="object-cover"
                 priority
               />
             </div>
