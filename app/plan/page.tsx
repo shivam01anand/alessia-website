@@ -1,12 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { 
-  Target, 
-  Users, 
-  Instagram, 
-  Linkedin, 
-  Globe, 
+import {
+  Target,
+  Users,
+  Instagram,
+  Linkedin,
+  Globe,
   Calendar,
   TrendingUp,
   Handshake,
@@ -15,7 +15,9 @@ import {
   Mail,
   MapPin,
   Star,
-  CheckCircle
+  CheckCircle,
+  Building,
+  Key
 } from "lucide-react";
 
 export default function MarketingPlanPage() {
@@ -35,7 +37,7 @@ export default function MarketingPlanPage() {
               2026 Marketing Strategy
             </h1>
             <p className="text-[#F7F4F0]/70 text-lg">
-              A roadmap to position Alessia Forcellati as Dubai&apos;s go-to luxury event manager for fashion brands and discerning private clients.
+              A roadmap to position Alessia Forcellati as Dubai&apos;s go-to for luxury events and real estate — serving fashion brands, discerning private clients, and European expats building their Dubai life.
             </p>
           </motion.div>
         </div>
@@ -112,6 +114,208 @@ export default function MarketingPlanPage() {
                   <p className="text-[#4A4543] text-sm"><strong>Your approach:</strong> {item.approach}</p>
                 </div>
               ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Real Estate Strategy */}
+      <section className="py-16 md:py-20 border-b border-[#2C2825]/10 bg-[#2C2825] text-[#F7F4F0]">
+        <div className="max-w-4xl mx-auto px-6 lg:px-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <Building className="w-5 h-5 text-[#C4856A]" />
+              <h2 className="font-serif text-2xl">Real Estate: The New Vertical</h2>
+            </div>
+            <p className="text-[#F7F4F0]/70 mb-10">
+              You&apos;ve spent a year building experience with Meerad Real Estate and Omiyat. Now it&apos;s time to position this as a deliberate expansion, not a side hustle.
+            </p>
+
+            {/* The Opportunity */}
+            <div className="mb-12">
+              <h3 className="font-medium text-lg mb-4 text-[#C4856A]">The Opportunity</h3>
+              <div className="space-y-4 text-[#F7F4F0]/80">
+                <p>
+                  Dubai&apos;s luxury real estate market hit <strong className="text-[#F7F4F0]">AED 528 billion</strong> in 2024. Off-plan sales to international buyers are at record highs. Europeans, especially Italians, are the fastest-growing buyer segment.
+                </p>
+                <p>
+                  Most agents here are transactional. They show properties and close deals. But luxury buyers, especially expats, want someone who understands lifestyle. Someone who can say &quot;this building has the best sunset views for entertaining&quot; or &quot;this developer is known for actually delivering on time.&quot;
+                </p>
+                <p>
+                  Your edge: <strong className="text-[#F7F4F0]">You already know the lifestyle.</strong> You&apos;ve managed events at these developments. You know which buildings attract which crowds. You understand what European buyers expect.
+                </p>
+              </div>
+            </div>
+
+            {/* Target Clients */}
+            <div className="mb-12">
+              <h3 className="font-medium text-lg mb-4 text-[#C4856A]">Who You&apos;re Targeting</h3>
+              <div className="grid gap-4">
+                {[
+                  {
+                    segment: "European Expats Relocating",
+                    description: "Italians, French, British moving to Dubai. They want someone who speaks their language (literally) and understands what they're looking for.",
+                    approach: "Position as the Italian who already made the move. You know the neighborhoods, the pitfalls, the visa process."
+                  },
+                  {
+                    segment: "Event Clients Looking to Invest",
+                    description: "HNWIs you meet through events who mention they're thinking about Dubai property. Natural cross-sell.",
+                    approach: "Don't push. Just mention you also help with property. Let them come to you."
+                  },
+                  {
+                    segment: "Investors Wanting Lifestyle Properties",
+                    description: "People buying for rental yield but who want properties that actually look good, in buildings with amenities.",
+                    approach: "Your eye for aesthetics is the differentiator. You know what photographs well, what impresses guests."
+                  },
+                  {
+                    segment: "Developers Needing Sales Support",
+                    description: "Off-plan projects targeting European buyers need agents who can speak to that market.",
+                    approach: "Your Omiyat and Meerad experience proves you can work the developer side."
+                  }
+                ].map((item, index) => (
+                  <div key={index} className="p-5 bg-[#F7F4F0]/5 border border-[#F7F4F0]/10">
+                    <h4 className="font-medium mb-2">{item.segment}</h4>
+                    <p className="text-sm text-[#F7F4F0]/60 mb-2">{item.description}</p>
+                    <p className="text-sm text-[#C4856A]">{item.approach}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* The Synergy */}
+            <div className="mb-12">
+              <h3 className="font-medium text-lg mb-4 text-[#C4856A]">Events + Real Estate: The Synergy</h3>
+              <div className="p-6 bg-[#F7F4F0]/5 border border-[#F7F4F0]/10">
+                <p className="text-[#F7F4F0]/80 mb-6">
+                  This combination is rare. Most event managers don&apos;t sell property. Most agents don&apos;t understand luxury hospitality. You do both.
+                </p>
+                <div className="grid md:grid-cols-2 gap-6 text-sm">
+                  <div>
+                    <p className="font-medium mb-2 text-[#C4856A]">Events → Real Estate</p>
+                    <ul className="space-y-2 text-[#F7F4F0]/70">
+                      <li>• Event clients are often property buyers</li>
+                      <li>• You meet HNWIs at every event</li>
+                      <li>• You already know the luxury venues/buildings</li>
+                      <li>• Trust is pre-built through event work</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="font-medium mb-2 text-[#C4856A]">Real Estate → Events</p>
+                    <ul className="space-y-2 text-[#F7F4F0]/70">
+                      <li>• Property buyers need housewarming events</li>
+                      <li>• Developers need launch event support</li>
+                      <li>• You can offer full lifestyle package</li>
+                      <li>• Commission clients for both services</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Positioning */}
+            <div className="mb-12">
+              <h3 className="font-medium text-lg mb-4 text-[#C4856A]">How to Position It</h3>
+              <div className="space-y-4 text-[#F7F4F0]/80">
+                <p>
+                  Don&apos;t position as &quot;event manager who also does real estate.&quot; That sounds scattered.
+                </p>
+                <p>
+                  Position as: <strong className="text-[#F7F4F0]">&quot;Luxury lifestyle consultant. Events and property.&quot;</strong>
+                </p>
+                <p>
+                  The narrative: You help discerning clients live beautifully in Dubai. Sometimes that means planning their event. Sometimes it means finding their home. Often it means both.
+                </p>
+                <div className="mt-6 p-4 border border-[#C4856A]/30">
+                  <p className="text-xs tracking-[0.2em] uppercase text-[#C4856A] mb-2">Updated Tagline Options</p>
+                  <ul className="space-y-2 text-sm">
+                    <li>&quot;Luxury Events & Real Estate | Dubai&quot;</li>
+                    <li>&quot;Italian Lifestyle Consultant | Events & Property | Dubai&quot;</li>
+                    <li>&quot;Creating Beautiful Lives in Dubai | Events & Real Estate&quot;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Quick Actions */}
+            <div>
+              <h3 className="font-medium text-lg mb-4 text-[#C4856A]">Real Estate: This Month</h3>
+              <div className="space-y-3">
+                {[
+                  "Add 'Real Estate' to LinkedIn headline and website tagline",
+                  "Create Instagram highlight: 'Properties' with best listings/viewings",
+                  "Post 1 property-related content piece per week (viewing, market insight, building spotlight)",
+                  "Ask Meerad/Omiyat contacts for a testimonial or recommendation",
+                  "Identify 3 developments you'd want to specialize in (know them deeply)",
+                  "Connect with 20 real estate professionals on LinkedIn (agents, developers, mortgage brokers)"
+                ].map((task, index) => (
+                  <div key={index} className="flex items-start gap-3 p-3 bg-[#F7F4F0]/5">
+                    <Key className="w-4 h-4 text-[#C4856A] mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-[#F7F4F0]/80">{task}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Real Estate Content Strategy */}
+      <section className="py-16 md:py-20 border-b border-[#2C2825]/10">
+        <div className="max-w-4xl mx-auto px-6 lg:px-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center gap-3 mb-8">
+              <Camera className="w-5 h-5 text-[#C4856A]" />
+              <h2 className="font-serif text-2xl">Real Estate Content Ideas</h2>
+            </div>
+
+            <p className="text-[#4A4543] mb-8">
+              Property content performs extremely well on Instagram and LinkedIn. It&apos;s visual, aspirational, and people love looking at luxury homes.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="p-6 bg-[#EDE8E1]">
+                <h3 className="font-medium mb-4">Instagram Content</h3>
+                <ul className="space-y-3 text-[#4A4543] text-sm">
+                  <li><strong>Property Tours:</strong> Reels walking through stunning apartments. These go viral.</li>
+                  <li><strong>View Shots:</strong> Balcony views, sunset through floor-to-ceiling windows.</li>
+                  <li><strong>Before/After:</strong> Empty apartment → styled for viewing.</li>
+                  <li><strong>Market Tips:</strong> &quot;3 things European buyers overlook in Dubai&quot;</li>
+                  <li><strong>Day in My Life:</strong> Viewings, client meetings, key handovers.</li>
+                </ul>
+              </div>
+
+              <div className="p-6 bg-[#EDE8E1]">
+                <h3 className="font-medium mb-4">LinkedIn Content</h3>
+                <ul className="space-y-3 text-[#4A4543] text-sm">
+                  <li><strong>Market Insights:</strong> &quot;What I&apos;m seeing in Dubai&apos;s luxury market this month&quot;</li>
+                  <li><strong>Client Stories:</strong> &quot;Helped an Italian family relocate to Dubai Marina...&quot;</li>
+                  <li><strong>Developer Spotlights:</strong> Why you recommend specific projects.</li>
+                  <li><strong>Comparison Posts:</strong> Downtown vs Marina vs Palm for families.</li>
+                  <li><strong>Lessons Learned:</strong> Mistakes buyers make, how to avoid them.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-8 p-6 bg-white border border-[#2C2825]/10">
+              <h3 className="font-medium mb-4">Hashtag Strategy for Real Estate</h3>
+              <div className="flex flex-wrap gap-2 text-xs">
+                {[
+                  "#DubaiRealEstate", "#DubaiProperty", "#LuxuryDubai",
+                  "#DubaiApartments", "#ExpatsInDubai", "#ItalianInDubai",
+                  "#DubaiInvestment", "#OffPlanDubai", "#DubaiMarina",
+                  "#DowntownDubai", "#PalmJumeirah", "#DubaiLife"
+                ].map((tag) => (
+                  <span key={tag} className="px-2 py-1 bg-[#EDE8E1] text-[#4A4543]">{tag}</span>
+                ))}
+              </div>
             </div>
           </motion.div>
         </div>
@@ -358,7 +562,7 @@ export default function MarketingPlanPage() {
             
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 bg-[#EDE8E1]">
-                <h3 className="font-medium mb-4">People to Meet</h3>
+                <h3 className="font-medium mb-4">Events Network</h3>
                 <ul className="space-y-3 text-[#4A4543] text-sm">
                   <li><strong>PR Agencies:</strong> They get event briefs first. Be their go-to referral.</li>
                   <li><strong>Hotel Event Managers:</strong> They need external planners for complex events.</li>
@@ -367,15 +571,31 @@ export default function MarketingPlanPage() {
                   <li><strong>Italian Business Council Dubai:</strong> Your people.</li>
                 </ul>
               </div>
-              
+
               <div className="p-6 bg-[#EDE8E1]">
-                <h3 className="font-medium mb-4">Events to Attend</h3>
+                <h3 className="font-medium mb-4">Real Estate Network</h3>
+                <ul className="space-y-3 text-[#4A4543] text-sm">
+                  <li><strong>Mortgage Brokers:</strong> They know who&apos;s actively buying.</li>
+                  <li><strong>Relocation Consultants:</strong> First contact for expats moving to Dubai.</li>
+                  <li><strong>Interior Designers:</strong> Buyers need staging and design help.</li>
+                  <li><strong>Developer Sales Teams:</strong> Omiyat, Emaar, Meraas contacts.</li>
+                  <li><strong>European Consulates:</strong> Expat community connections.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-6 p-6 bg-[#EDE8E1]">
+              <h3 className="font-medium mb-4">Events to Attend (Both Verticals)</h3>
+              <div className="grid md:grid-cols-2 gap-6">
                 <ul className="space-y-3 text-[#4A4543] text-sm">
                   <li><strong>Dubai Fashion Week:</strong> Your credentials get you in rooms.</li>
                   <li><strong>Art Dubai:</strong> HNWI concentration.</li>
-                  <li><strong>Hotel openings:</strong> Network with hospitality buyers.</li>
                   <li><strong>Italian Chamber events:</strong> Expat network.</li>
-                  <li><strong>Brand launch parties:</strong> Be seen, be remembered.</li>
+                </ul>
+                <ul className="space-y-3 text-[#4A4543] text-sm">
+                  <li><strong>Property launches:</strong> Developer events, showroom openings.</li>
+                  <li><strong>Cityscape Dubai:</strong> Real estate expo, major networking.</li>
+                  <li><strong>Expat networking events:</strong> InterNations, etc.</li>
                 </ul>
               </div>
             </div>
@@ -402,7 +622,7 @@ export default function MarketingPlanPage() {
                 <p className="text-[#4A4543] text-sm mb-4">These are what potential clients Google:</p>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="p-4 bg-white">
-                    <p className="font-medium text-sm mb-2">High Intent (Ready to Hire)</p>
+                    <p className="font-medium text-sm mb-2">Events: High Intent</p>
                     <ul className="text-[#4A4543] text-sm space-y-1">
                       <li>&quot;luxury event planner Dubai&quot;</li>
                       <li>&quot;fashion event planner Dubai&quot;</li>
@@ -411,12 +631,12 @@ export default function MarketingPlanPage() {
                     </ul>
                   </div>
                   <div className="p-4 bg-white">
-                    <p className="font-medium text-sm mb-2">Research Phase</p>
+                    <p className="font-medium text-sm mb-2">Real Estate: High Intent</p>
                     <ul className="text-[#4A4543] text-sm space-y-1">
-                      <li>&quot;best event planners Dubai&quot;</li>
-                      <li>&quot;luxury wedding planner UAE&quot;</li>
-                      <li>&quot;corporate event management Dubai&quot;</li>
-                      <li>&quot;VIP event planner Dubai&quot;</li>
+                      <li>&quot;Italian real estate agent Dubai&quot;</li>
+                      <li>&quot;European expat property Dubai&quot;</li>
+                      <li>&quot;luxury apartments Dubai Marina&quot;</li>
+                      <li>&quot;off-plan property Dubai&quot;</li>
                     </ul>
                   </div>
                 </div>
@@ -425,13 +645,24 @@ export default function MarketingPlanPage() {
               <div>
                 <h3 className="font-medium mb-3">Blog Content Ideas (Add Later)</h3>
                 <p className="text-[#4A4543] text-sm mb-4">Each post targets a keyword and builds authority:</p>
-                <ul className="space-y-2 text-[#4A4543] text-sm">
-                  <li>&quot;Planning a Luxury Brand Activation in Dubai: What Fashion Houses Need to Know&quot;</li>
-                  <li>&quot;Italian Design Principles in Event Styling&quot;</li>
-                  <li>&quot;The Rise of Dubai as a Global Fashion Event Destination&quot;</li>
-                  <li>&quot;Destination Wedding Planning: Dubai vs Mediterranean&quot;</li>
-                  <li>&quot;What to Expect When Hiring an Event Planner in Dubai&quot;</li>
-                </ul>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <p className="font-medium text-sm mb-2 text-[#C4856A]">Events</p>
+                    <ul className="space-y-2 text-[#4A4543] text-sm">
+                      <li>&quot;Planning a Luxury Brand Activation in Dubai&quot;</li>
+                      <li>&quot;Italian Design Principles in Event Styling&quot;</li>
+                      <li>&quot;Destination Wedding Planning: Dubai vs Mediterranean&quot;</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="font-medium text-sm mb-2 text-[#C4856A]">Real Estate</p>
+                    <ul className="space-y-2 text-[#4A4543] text-sm">
+                      <li>&quot;An Italian&apos;s Guide to Buying Property in Dubai&quot;</li>
+                      <li>&quot;Best Dubai Neighborhoods for European Expats&quot;</li>
+                      <li>&quot;Off-Plan vs Ready: What First-Time Dubai Buyers Should Know&quot;</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -505,7 +736,10 @@ export default function MarketingPlanPage() {
                 { metric: "LinkedIn Connections", target: "500+ in industry", by: "Q3 2026" },
                 { metric: "Google Ranking", target: "Page 1 for 'Italian event planner Dubai'", by: "Q4 2026" },
                 { metric: "Portfolio Projects", target: "10+ documented events", by: "End of 2026" },
-                { metric: "Referral Sources", target: "3+ active partners", by: "Q3 2026" },
+                { metric: "Property Transactions", target: "3+ closed deals", by: "End of 2026" },
+                { metric: "Real Estate Network", target: "5+ developer relationships", by: "Q3 2026" },
+                { metric: "Cross-Referrals", target: "Events ↔ Property clients", by: "Q4 2026" },
+                { metric: "Referral Sources", target: "5+ active partners (both verticals)", by: "Q3 2026" },
               ].map((item, index) => (
                 <div key={index} className="p-6 bg-white text-center">
                   <p className="text-xs tracking-[0.2em] uppercase text-[#C4856A] mb-2">{item.metric}</p>
@@ -533,12 +767,13 @@ export default function MarketingPlanPage() {
             
             <div className="space-y-4">
               {[
-                "Update LinkedIn headline to 'Luxury Event Manager | Fashion Brand Activations | Dubai'",
+                "Update LinkedIn headline to 'Luxury Events & Real Estate | Dubai'",
                 "Add alessiaforcellati.com to LinkedIn, Instagram bio, email signature, WhatsApp status",
-                "Request 3 LinkedIn recommendations from former colleagues",
-                "Follow 50 relevant accounts on Instagram (Dubai venues, fashion brands, event industry)",
-                "Save 10 event photos from your phone to a 'Content' folder",
-                "Send website link to 5 people who might refer you",
+                "Request 3 LinkedIn recommendations from former colleagues (events + real estate)",
+                "Create Instagram highlight for 'Properties' alongside 'Events'",
+                "Follow 50 relevant accounts (Dubai venues, developers, luxury lifestyle)",
+                "Post 1 property tour reel this week (they perform extremely well)",
+                "Send website link to 5 people who might refer you for either service",
               ].map((task, index) => (
                 <div key={index} className="flex items-start gap-4 p-4 bg-[#F7F4F0]/5">
                   <span className="font-serif text-xl text-[#C4856A]">{index + 1}</span>
