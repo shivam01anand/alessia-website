@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Sparkles, Heart, Building2, Music, Plane, CheckCircle } from "lucide-react";
+import { Sparkles, Heart, Building2, Music, Plane, Home, CheckCircle } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -86,6 +86,22 @@ const services = [
     ],
     image: "/images/venues/14_st_tropez_wedding_venues.jpg",
   },
+  {
+    icon: Home,
+    title: "Dubai Real Estate",
+    tagline: "Your address in the Gulf",
+    description:
+      "The same eye for detail I bring to events, I bring to finding your Dubai home. Whether you're relocating, investing, or seeking a pied-à-terre, I guide you through Dubai's most desirable addresses with discretion and expertise.",
+    features: [
+      "Property search",
+      "Investment advisory",
+      "Off-plan opportunities",
+      "Marina & Downtown",
+      "Palm Jumeirah",
+      "Relocation support",
+    ],
+    image: "/images/venues/18_dubai_luxury.jpg",
+  },
 ];
 
 const process = [
@@ -133,8 +149,8 @@ export default function ServicesPage() {
               What I Do
             </h1>
             <p className="text-[#4A4543] text-lg leading-relaxed">
-              Fashion houses taught me that luxury is in the details. Seven years
-              taught me how to execute them.
+              Fashion houses taught me that luxury is in the details. Eight years
+              in events, now bringing that same standard to Dubai real estate.
             </p>
           </motion.div>
         </div>
@@ -321,7 +337,7 @@ export default function ServicesPage() {
             viewport={{ once: true }}
           >
             <h2 className="font-serif text-4xl md:text-5xl mb-4">
-              Discuss your event.
+              Let&apos;s discuss your vision.
             </h2>
             <p className="text-[#F7F4F0]/50 mb-10">
               Currently based in Dubai. Available worldwide.

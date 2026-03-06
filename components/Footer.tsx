@@ -13,8 +13,8 @@ export default function Footer() {
               <span className="text-[#C4856A]">.</span>
             </h3>
             <p className="text-[#EDE8E1]/70 max-w-md leading-relaxed">
-              Italian elegance, Dubai grandeur. Creating unforgettable luxury
-              events for fashion houses, private clients, and exclusive venues.
+              Italian elegance, Dubai grandeur. Curating unforgettable moments
+              — from fashion galas to Dubai&apos;s most coveted addresses.
             </p>
             <div className="flex items-center gap-2 mt-6 text-sm text-[#EDE8E1]/50">
               <MapPin className="w-4 h-4" />
