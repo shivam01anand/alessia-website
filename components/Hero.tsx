@@ -23,7 +23,7 @@ export default function Hero() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              Luxury Event Management · Dubai
+              Luxury Events & Real Estate · Dubai
             </motion.p>
 
             <motion.h1
@@ -43,8 +43,7 @@ export default function Hero() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
             >
-              From Van Cleef exhibitions to Formula E hospitality — eight years creating
-              unforgettable moments for maisons and discerning clients.
+              From styling galas for Dior to handing over keys in Marina — I breathe luxury. Let me help you discover yours.
             </motion.p>
 
             <motion.div

@@ -35,25 +35,40 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-[#F7F4F0]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <motion.div
-            className="max-w-3xl"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-          >
-            <p className="text-xs tracking-[0.3em] uppercase text-[#C4856A] mb-4">
-              Contact
-            </p>
-            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl mb-8">
-              Let&apos;s Create
-              <br />
-              <span className="text-[#C4856A]">Together</span>
-            </h1>
-            <p className="text-[#4A4543] text-lg leading-relaxed">
-              Whether you&apos;re planning a brand activation, private celebration,
-              or exclusive event, I&apos;d love to hear your vision. Every great
-              event starts with a conversation.
-            </p>
-          </motion.div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+            >
+              <p className="text-xs tracking-[0.3em] uppercase text-[#C4856A] mb-4">
+                Contact
+              </p>
+              <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl mb-8">
+                Let&apos;s Create
+                <br />
+                <span className="text-[#C4856A]">Together</span>
+              </h1>
+              <p className="text-[#4A4543] text-lg leading-relaxed">
+                Whether you&apos;re planning a brand activation, private celebration,
+                or finding your Dubai home, I&apos;d love to hear your vision.
+              </p>
+            </motion.div>
+
+            {/* Professional Photo */}
+            <motion.div
+              className="relative aspect-[4/5] overflow-hidden hidden lg:block"
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2 }}
+            >
+              <Image
+                src="/images/alessia/professional-blazer.png"
+                alt="Alessia Forcellati"
+                fill
+                className="object-cover"
+              />
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -79,16 +94,6 @@ export default function ContactPage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 }}
             >
-              {/* Professional Photo */}
-              <div className="relative aspect-[4/5] mb-10 overflow-hidden">
-                <Image
-                  src="/images/alessia/professional-blazer.png"
-                  alt="Alessia Forcellati"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
               <h2 className="font-serif text-3xl mb-8">Get in Touch</h2>
 
               {/* Location */}
