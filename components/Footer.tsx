@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -81,6 +81,17 @@ export default function Footer() {
                 >
                   <Instagram className="w-4 h-4" />
                   <span>@alesh_forc</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/alessia-forcellati-592567208/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-[#EDE8E1]/70 hover:text-[#C4856A] transition-colors"
+                >
+                  <Linkedin className="w-4 h-4" />
+                  <span>LinkedIn</span>
                 </a>
               </li>
             </ul>

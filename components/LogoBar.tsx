@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const brands = [
+  { name: "Van Cleef & Arpels", logo: "/logos/van-cleef-logo.svg" },
+  { name: "Audemars Piguet", logo: "/logos/audemars-piguet-logo.svg" },
   { name: "Valentino", logo: "/logos/valentino-logo.svg" },
   { name: "Chanel", logo: "/logos/chanel-logo.svg" },
   { name: "Dior", logo: "/logos/dior-logo.svg" },

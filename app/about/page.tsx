@@ -155,16 +155,31 @@ export default function AboutPage() {
 
       {/* Quote */}
       <section className="py-24 md:py-32 bg-[#2C2825] text-[#F7F4F0]">
-        <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
-          <motion.blockquote
-            className="font-serif text-3xl md:text-4xl lg:text-5xl leading-tight"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            The details they notice. The moments they
-            <span className="text-[#C4856A]"> don&apos;t forget</span>.
-          </motion.blockquote>
+        <div className="max-w-6xl mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <motion.div
+              className="relative aspect-[4/5] overflow-hidden"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <Image
+                src="/images/alessia/professional-blazer.png"
+                alt="Alessia Forcellati"
+                fill
+                className="object-cover"
+              />
+            </motion.div>
+            <motion.blockquote
+              className="font-serif text-3xl md:text-4xl lg:text-5xl leading-tight text-center lg:text-left"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              The details they notice. The moments they
+              <span className="text-[#C4856A]"> don&apos;t forget</span>.
+            </motion.blockquote>
+          </div>
         </div>
       </section>
 

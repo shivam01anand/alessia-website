@@ -43,8 +43,8 @@ export default function Hero() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
             >
-              From Valentino&apos;s ateliers to Formula E circuits, creating
-              unforgettable moments for fashion houses and discerning clients.
+              From Van Cleef exhibitions to Formula E hospitality — eight years creating
+              unforgettable moments for maisons and discerning clients.
             </motion.p>
 
             <motion.div
@@ -74,7 +74,7 @@ export default function Hero() {
               animate={{ opacity: 1 }}
               transition={{ delay: 1 }}
             >
-              Rome · Milan · Mykonos · Dubai · Riyadh
+              Rome · Cannes · Mykonos · Dubai · Riyadh
             </motion.p>
           </motion.div>
 

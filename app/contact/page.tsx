@@ -79,6 +79,16 @@ export default function ContactPage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 }}
             >
+              {/* Professional Photo */}
+              <div className="relative aspect-[4/5] mb-10 overflow-hidden">
+                <Image
+                  src="/images/alessia/professional-blazer.png"
+                  alt="Alessia Forcellati"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
               <h2 className="font-serif text-3xl mb-8">Get in Touch</h2>
 
               {/* Location */}

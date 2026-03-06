@@ -11,10 +11,10 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
-    
+
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1500));
-    
+
     setIsLoading(false);
     setIsSubmitted(true);
   };
@@ -29,7 +29,7 @@ export default function ContactForm() {
         <CheckCircle className="w-16 h-16 text-[#C4856A] mx-auto mb-6" />
         <h3 className="font-serif text-3xl mb-4">Thank You</h3>
         <p className="text-[#4A4543]">
-          I&apos;ll be in touch within 24 hours to discuss your event.
+          I&apos;ll be in touch within 24 hours.
         </p>
       </motion.div>
     );
@@ -37,6 +37,31 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-8">
+      {/* Interest Type - New Field */}
+      <div className="relative group">
+        <label
+          className="block text-xs tracking-[0.2em] uppercase text-[#4A4543] mb-4"
+        >
+          I&apos;m interested in *
+        </label>
+        <div className="flex flex-wrap gap-3">
+          {["Events", "Real Estate", "Both"].map((option) => (
+            <label key={option} className="cursor-pointer">
+              <input
+                type="radio"
+                name="interestType"
+                value={option.toLowerCase().replace(" ", "-")}
+                required
+                className="peer sr-only"
+              />
+              <span className="inline-block px-6 py-3 border border-[#2C2825]/20 text-sm tracking-wide transition-all duration-300 peer-checked:bg-[#2C2825] peer-checked:text-white peer-checked:border-[#2C2825] hover:border-[#2C2825]/50">
+                {option}
+              </span>
+            </label>
+          ))}
+        </div>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="relative group">
           <label
@@ -93,20 +118,21 @@ export default function ContactForm() {
             htmlFor="eventType"
             className="block text-xs tracking-[0.2em] uppercase text-[#4A4543] mb-3 transition-colors duration-300 group-focus-within:text-[#C4856A]"
           >
-            Event Type *
+            Type
           </label>
           <select
             id="eventType"
             name="eventType"
-            required
             className="w-full bg-transparent border-b-2 border-[#2C2825]/20 focus:border-[#C4856A] py-3 outline-none transition-all duration-[400ms] cursor-pointer"
           >
-            <option value="">Select event type</option>
+            <option value="">Select type</option>
             <option value="brand-activation">Brand Activation</option>
             <option value="private-event">Private Event</option>
             <option value="corporate">Corporate Event</option>
             <option value="nightlife">Nightlife / Entertainment</option>
             <option value="destination">Destination Event</option>
+            <option value="property-search">Property Search</option>
+            <option value="property-investment">Property Investment</option>
             <option value="other">Other</option>
           </select>
         </div>
@@ -114,30 +140,10 @@ export default function ContactForm() {
 
       <div className="relative group">
         <label
-          htmlFor="budget"
-          className="block text-xs tracking-[0.2em] uppercase text-[#4A4543] mb-3 transition-colors duration-300 group-focus-within:text-[#C4856A]"
-        >
-          Estimated Budget (AED)
-        </label>
-        <select
-          id="budget"
-          name="budget"
-          className="w-full bg-transparent border-b-2 border-[#2C2825]/20 focus:border-[#C4856A] py-3 outline-none transition-all duration-[400ms] cursor-pointer"
-        >
-          <option value="">Prefer not to say</option>
-          <option value="50k-100k">50,000 - 100,000</option>
-          <option value="100k-250k">100,000 - 250,000</option>
-          <option value="250k-500k">250,000 - 500,000</option>
-          <option value="500k+">500,000+</option>
-        </select>
-      </div>
-
-      <div className="relative group">
-        <label
           htmlFor="message"
           className="block text-xs tracking-[0.2em] uppercase text-[#4A4543] mb-3 transition-colors duration-300 group-focus-within:text-[#C4856A]"
         >
-          Tell Me About Your Vision *
+          Tell Me More *
         </label>
         <textarea
           id="message"
@@ -145,7 +151,7 @@ export default function ContactForm() {
           required
           rows={5}
           className="w-full bg-transparent border-b-2 border-[#2C2825]/20 focus:border-[#C4856A] py-3 outline-none transition-all duration-[400ms] resize-none"
-          placeholder="Share details about your event: the occasion, guest count, desired atmosphere, any inspiration..."
+          placeholder="Share details about your event or property requirements..."
         />
       </div>
 
