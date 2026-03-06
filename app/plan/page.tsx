@@ -785,6 +785,212 @@ export default function MarketingPlanPage() {
         </div>
       </section>
 
+      {/* Real Estate Mentor Note */}
+      <section className="py-20 md:py-28 bg-[#EDE8E1]">
+        <div className="max-w-3xl mx-auto px-6 lg:px-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <p className="text-xs tracking-[0.3em] uppercase text-[#C4856A] mb-6">
+              Real Estate: What You Need to Know
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl mb-10">
+              Some things I wish someone had told me about Dubai property.
+            </h2>
+
+            <div className="space-y-6 text-[#4A4543] leading-relaxed">
+              <p>
+                Real estate in Dubai is not like real estate anywhere else. The market moves fast, the commissions are high, and the competition is relentless. But the opportunity is real. More transactions happened in 2024 than any year in Dubai&apos;s history. The buyers are there. The question is whether they find you.
+              </p>
+
+              <p>
+                You have an advantage most agents do not have. You already move in the right circles. You already know what luxury looks like. Most agents in Dubai learned sales first and lifestyle second. You learned it the other way around. That matters more than you might think.
+              </p>
+
+              <div className="my-10 py-8 border-t border-b border-[#2C2825]/10">
+                <p className="font-serif text-xl text-[#2C2825] mb-6">
+                  The tools you need to know:
+                </p>
+                <div className="space-y-6">
+                  <div>
+                    <p className="font-medium text-[#2C2825] mb-2">Property Finder and Bayut</p>
+                    <p className="text-sm">
+                      These are where most buyers start their search. You need to understand how listings rank, what makes a listing stand out, and how the algorithm favors certain agents. Ask your brokerage about premium placements. Study the top agents in your area and notice what they do differently in their listings. The photography matters. The description matters. The response time matters most.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="font-medium text-[#2C2825] mb-2">CRM Systems</p>
+                    <p className="text-sm">
+                      Your brokerage likely uses something like Zoho, HubSpot, or a property-specific CRM. Learn it properly. Most agents treat the CRM as an admin chore. The good ones treat it as their memory. Every interaction, every preference, every offhand comment about wanting a bigger balcony. Write it down. In six months, when a perfect listing comes up, you will be the agent who remembers what they said.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="font-medium text-[#2C2825] mb-2">Dubai REST App</p>
+                    <p className="text-sm">
+                      The official Dubai Land Department app. You need this. It shows real transaction prices, not asking prices. When a client tells you a property is overpriced, you can show them the actual data. When a seller has unrealistic expectations, you can show them what similar units actually sold for. Data wins arguments.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="font-medium text-[#2C2825] mb-2">Canva and CapCut</p>
+                    <p className="text-sm">
+                      For your social content. You do not need expensive software. You need speed and consistency. Create templates for property posts so you can publish quickly when you get a new listing. The agents who post within hours of getting a listing get more inquiries than those who wait days for perfect photography.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="font-medium text-[#2C2825] mb-2">WhatsApp Business</p>
+                    <p className="text-sm">
+                      Not regular WhatsApp. The business version lets you create quick replies, organize contacts with labels, and set up a product catalog of your current listings. Most agents still use their personal WhatsApp. This is a mistake. Clients notice professionalism in small details.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="my-10 py-8 border-t border-b border-[#2C2825]/10">
+                <p className="font-serif text-xl text-[#2C2825] mb-6">
+                  What actually closes deals:
+                </p>
+                <div className="space-y-4">
+                  <p>
+                    <strong>Speed.</strong> In Dubai, the first agent to respond often gets the client. People here expect immediate replies. If you take three hours to respond to an inquiry, someone else already showed them three properties. Set up notifications. Respond within minutes, not hours.
+                  </p>
+
+                  <p>
+                    <strong>Knowledge of specific buildings.</strong> Do not try to know everything about every building in Dubai. Pick five to ten developments and know them deeply. Know the service charges. Know which floors have the best views. Know the rental yields. Know the developer&apos;s reputation. When a client asks about those buildings, you should sound like you live there.
+                  </p>
+
+                  <p>
+                    <strong>Being honest about the bad parts.</strong> Most agents only talk about the positives. The ones who build long-term relationships are the ones who say &quot;this building has great amenities but the traffic at that exit is terrible during rush hour.&quot; Buyers are not stupid. They appreciate honesty. And they remember who gave it to them.
+                  </p>
+
+                  <p>
+                    <strong>Following up without being annoying.</strong> The balance is difficult. Most deals do not close on the first viewing. But clients get dozens of agents calling them. Find reasons to follow up that add value. A new listing that matches their criteria. A price drop on something they liked. Market news that affects their decision. Not just &quot;checking in.&quot;
+                  </p>
+
+                  <p>
+                    <strong>Understanding the full process.</strong> Many clients, especially first-time buyers and expats, have no idea how the process works. Title deed transfers, mortgage approvals, cooling-off periods, oqood registration. Walk them through it before they have to ask. Be the person who makes it feel simple.
+                  </p>
+                </div>
+              </div>
+
+              <div className="my-10 py-8 border-t border-b border-[#2C2825]/10">
+                <p className="font-serif text-xl text-[#2C2825] mb-6">
+                  Common mistakes to avoid:
+                </p>
+                <div className="space-y-4">
+                  <p>
+                    <strong>Taking on too many areas.</strong> New agents often list properties everywhere because they think more coverage means more clients. The opposite happens. You spread yourself thin, you don&apos;t know the buildings well, and clients sense it. Start with one or two areas. Become the expert there. Expand later.
+                  </p>
+
+                  <p>
+                    <strong>Undervaluing off-plan.</strong> Some agents avoid off-plan because they think ready properties are easier to sell. But off-plan has advantages. The commission is often higher. The developer provides marketing support. And buyers who buy off-plan today become secondary market sellers or buyers again in two to three years. You are building a pipeline.
+                  </p>
+
+                  <p>
+                    <strong>Ignoring the investor segment.</strong> Not every buyer is looking for a home. Many are looking for yield. Learn to speak their language. Know the rental returns in different areas. Know which buildings have high occupancy. Know the short-term rental regulations. Investors who trust you will buy multiple properties from you over time.
+                  </p>
+
+                  <p>
+                    <strong>Not building a relationship with developers.</strong> When Omiyat or Emaar launches a new project, the agents who get first access to units are the agents who have relationships with the sales teams. Introduce yourself. Attend their events. Bring them clients even for projects that are not your focus. The relationship compounds.
+                  </p>
+                </div>
+              </div>
+
+              <div className="my-10 py-8 border-t border-b border-[#2C2825]/10">
+                <p className="font-serif text-xl text-[#2C2825] mb-6">
+                  Things most agents never think about:
+                </p>
+                <div className="space-y-4">
+                  <p>
+                    <strong>The maintenance fee trap.</strong> Buyers look at purchase price. Smart buyers look at service charges. Some buildings have service fees of 15 AED per square foot. Others have 35 AED. On a 1,500 square foot apartment, that is a difference of 30,000 AED per year. Know these numbers. When you tell a client &quot;this building is cheaper to buy but more expensive to own,&quot; you become the agent who saved them from a mistake.
+                  </p>
+
+                  <p>
+                    <strong>The parking situation.</strong> In some buildings, parking is included. In others, it is an additional 50,000 to 100,000 AED. In some areas, you cannot get visitor parking at all. For families with two cars, this matters more than the gym. Ask the questions your competition does not ask.
+                  </p>
+
+                  <p>
+                    <strong>Short-term rental regulations.</strong> Many investors buy thinking they will Airbnb the property. But not all buildings allow it. Not all areas have permits available. And the Holiday Homes regulations change regularly. Know the current rules. Know which buildings have active enforcement. This knowledge prevents expensive mistakes.
+                  </p>
+
+                  <p>
+                    <strong>The handover timeline for off-plan.</strong> Developers give estimated completion dates. Experienced agents know which developers deliver on time and which routinely delay. A six-month delay is not unusual. An eighteen-month delay is a problem. Having this knowledge separates you from agents who just sell brochures.
+                  </p>
+
+                  <p>
+                    <strong>Where the schools actually are.</strong> For family buyers, especially Europeans, school proximity drives decisions more than marina views. Know where the GEMS schools are. Know the Emirates British School catchment. Know the traffic at school drop-off times. Parents remember the agent who thought about their children.
+                  </p>
+                </div>
+              </div>
+
+              <div className="my-10 py-8 border-t border-b border-[#2C2825]/10">
+                <p className="font-serif text-xl text-[#2C2825] mb-6">
+                  On the drone attacks and what it means for your business:
+                </p>
+                <div className="space-y-4">
+                  <p>
+                    The Iranian drone attacks this week were real. Drones were intercepted over the UAE. The defense systems worked. No one was hurt. But the footage was everywhere, and your clients saw it. Some are scared. That is a reasonable response.
+                  </p>
+
+                  <p>
+                    Here is what you need to understand about working through this.
+                  </p>
+
+                  <p>
+                    <strong>First order effects</strong> are already happening. Some buyers have paused. Inquiries are down. European families who were planning to relocate are having second conversations with their spouses. Sellers who were already nervous are now asking if they should drop prices. The news cycle dominates every coffee meeting.
+                  </p>
+
+                  <p>
+                    <strong>Second order effects</strong> will unfold over the next few weeks. The nervous sellers who panic-list create buying opportunities for committed investors. The rental market tightens because fence-sitters who were about to buy decide to rent &quot;for one more year.&quot; The tourists who were coming for spring events cancel, but the long-term expat community stays. Short-term Airbnb occupancy dips but long-term rental demand increases.
+                  </p>
+
+                  <p>
+                    <strong>Third order effects</strong> are where opportunity lives. The clients who move forward despite the news are the most serious buyers you will ever work with. They are not browsing. They have already processed the geopolitical reality and decided that Dubai is still where they want to be. These people make decisions. They do not ghost you after viewings. They close deals. And they refer others like them.
+                  </p>
+
+                  <p>
+                    The expats who were already ambivalent will use this as their exit reason. That is fine. The ones who stay are more committed to building their lives here. Your client base becomes more serious, not larger.
+                  </p>
+
+                  <p>
+                    <strong>How to position yourself:</strong> Do not pretend it did not happen. Do not tell people their concerns are overblown. But have perspective ready. Dubai intercepted every drone. The UAE has invested billions in defense systems that clearly work. This is not a city pretending risk does not exist. It is a city that has prepared for it.
+                  </p>
+
+                  <p>
+                    Know your history. Dubai weathered 2008 when property values dropped 50%. It weathered Covid when the entire tourism industry paused. It weathered previous regional conflicts. Each time, the market recovered. People who bought during uncertainty saw significant returns when confidence returned.
+                  </p>
+
+                  <p>
+                    Be the calm, informed voice. Not dismissive. Not anxious. The agent who can say &quot;yes, the attacks happened, here is what we know, here is what the UAE has done in response, and here is what the data shows about previous recoveries&quot; will be remembered as someone who helped clients think clearly when everyone else was either panicking or avoiding the conversation entirely.
+                  </p>
+
+                  <p>
+                    Things will normalize. They always do. The agents who maintained their presence during the difficult weeks are the ones clients remember when confidence returns.
+                  </p>
+                </div>
+              </div>
+
+              <p>
+                The first year in real estate is hard. The income is inconsistent. You will spend weeks working with clients who choose another agent or decide not to buy at all. This is normal. The agents who make it are the ones who understand that every no is getting them closer to a yes, and every client interaction is building a reputation that will pay off later.
+              </p>
+
+              <p>
+                You have something most new agents do not have. You have an existing network of HNWIs from your event work. You have an eye for quality that clients will recognize. You have the ability to make people feel comfortable in high-stakes situations. Real estate is not just about property. It is about trust. And you already know how to build that.
+              </p>
+
+              <p className="font-serif text-xl text-[#2C2825] mt-10">
+                The credentials are coming together. Now you just need the patience to let them work.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Mentor Note */}
       <section className="py-20 md:py-28 bg-[#F7F4F0]">
         <div className="max-w-3xl mx-auto px-6 lg:px-12">
