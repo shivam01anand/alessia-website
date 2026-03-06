@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://alessiaforcellati.com"),
   openGraph: {
     title: "Alessia Forcellati",
-    description: "Luxury Event Manager. Dubai.",
+    description: "Luxury Events & Real Estate. Dubai.",
     type: "website",
     locale: "en_US",
     siteName: "Alessia Forcellati",
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Alessia Forcellati - Luxury Event Manager",
+        alt: "Alessia Forcellati - Luxury Events & Real Estate",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Alessia Forcellati",
-    description: "Luxury Event Manager. Dubai.",
+    description: "Luxury Events & Real Estate. Dubai.",
     images: ["/og-image.jpg"],
   },
 };
