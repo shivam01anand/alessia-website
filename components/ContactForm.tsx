@@ -12,11 +12,23 @@ export default function ContactForm() {
     e.preventDefault();
     setIsLoading(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    const formData = new FormData(e.currentTarget);
+    formData.append("access_key", "a39897ff-ebf5-46d3-a7cc-164019f8a1c2");
 
-    setIsLoading(false);
-    setIsSubmitted(true);
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   if (isSubmitted) {
