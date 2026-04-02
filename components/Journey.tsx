@@ -4,25 +4,25 @@ import { motion } from "framer-motion";
 
 const milestones = [
   {
-    period: "2025 to Present",
+    period: "2025 — Present",
     title: "Digital Minds · MC Holding",
     description:
       "Project Event Manager at a global luxury tech and marketing group. Dubai, Milan, New York, China.",
   },
   {
-    period: "2022 to 2025",
+    period: "2022 — 2025",
     title: "Events & Real Estate",
     description:
-      "Clients started asking for properties. It made sense. I already knew what luxury looked like when you live in it.",
+      "Clients started asking for properties. A natural evolution — from hosting them to finding their Dubai address.",
   },
   {
-    period: "2020 to 2022",
+    period: "2020 — 2022",
     title: "Nightlife & Hospitality",
     description:
-      "From Sottovento in Porto Cervo to Moni in Mykonos. Places where the atmosphere is everything.",
+      "From Sottovento in Porto Cervo to Moni in Mykonos — curating atmospheres that became destinations.",
   },
   {
-    period: "2017 to 2020",
+    period: "2017 — 2020",
     title: "Fashion & Luxury Events",
     description:
       "Styled events for Valentino, Chanel, Dior, and Moncler across Rome, Milan, and Florence.",
