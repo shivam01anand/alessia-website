@@ -77,7 +77,7 @@ export default function AboutPage() {
               <div className="space-y-6 text-[#4A4543] leading-relaxed">
                 <p className="text-lg">
                   I started in the world of fashion events. Valentino, Chanel, Dior,
-                  Moncler — three years learning that luxury brands accept nothing
+                  Moncler. Three years learning that luxury brands accept nothing
                   less than perfection.
                 </p>
                 <p>
@@ -94,7 +94,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   Today I&apos;m a Project Event Manager at Digital Minds, part of
-                  MC Holding Group — a global luxury tech and marketing company with
+                  MC Holding Group, a global luxury tech and marketing company with
                   offices in Dubai, Milan, New York, and China. I still take on select
                   private events and real estate clients on the side.
                 </p>
@@ -189,7 +189,7 @@ export default function AboutPage() {
               Let&apos;s Connect
             </h2>
             <p className="text-[#F7F4F0]/70 mb-10 max-w-xl mx-auto">
-              Events, real estate, or global projects — I&apos;d love to hear from you.
+              Events, real estate, or global projects. I&apos;d love to hear from you.
             </p>
             <Link
               href="/contact"
