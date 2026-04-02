@@ -17,7 +17,7 @@ const milestones = [
   },
   {
     period: "2020 — 2022",
-    title: "Nightlife & Hospitality",
+    title: "Entertainment & Hospitality",
     description:
       "From Sottovento in Porto Cervo to Moni in Mykonos — curating atmospheres that became destinations.",
   },
