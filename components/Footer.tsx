@@ -13,12 +13,12 @@ export default function Footer() {
               <span className="text-[#C4856A]">.</span>
             </h3>
             <p className="text-[#EDE8E1]/70 max-w-md leading-relaxed">
-              Italian elegance, Dubai grandeur. Creating unforgettable luxury
-              events and finding exceptional homes for discerning clients.
+              Project Event Manager at Digital Minds. Luxury events,
+              real estate, and global marketing.
             </p>
             <div className="flex items-center gap-2 mt-6 text-sm text-[#EDE8E1]/50">
               <MapPin className="w-4 h-4" />
-              <span>Rome · Milan · Mykonos · Dubai · Riyadh</span>
+              <span>Dubai · Milan · New York · China</span>
             </div>
           </div>
 
@@ -30,8 +30,6 @@ export default function Footer() {
             <ul className="space-y-4">
               {[
                 { href: "/about", label: "About" },
-                { href: "/portfolio", label: "Portfolio" },
-                { href: "/services", label: "Services" },
                 { href: "/contact", label: "Contact" },
               ].map((link) => (
                 <li key={link.href}>

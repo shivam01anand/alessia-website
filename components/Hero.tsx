@@ -7,7 +7,6 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-[#F7F4F0]">
-      {/* Grid Layout */}
       <div className="w-full max-w-7xl mx-auto px-6 lg:px-12 pt-28 pb-16 md:pt-32 md:pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: Content */}
@@ -23,7 +22,7 @@ export default function Hero() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              Luxury Events & Real Estate · Dubai
+              Project Event Manager · Dubai
             </motion.p>
 
             <motion.h1
@@ -32,9 +31,9 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              Italian Elegance,
+              Alessia
               <br />
-              <span className="text-[#C4856A]">Gulf Grandeur</span>
+              <span className="text-[#C4856A]">Forcellati</span>
             </motion.h1>
 
             <motion.p
@@ -43,7 +42,8 @@ export default function Hero() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
             >
-              From styling galas for Dior to handing over keys in Marina — I breathe luxury. Let me help you discover yours.
+              Italian roots, Dubai base. Eight years in luxury events,
+              now shaping global projects at Digital Minds.
             </motion.p>
 
             <motion.div
@@ -56,24 +56,23 @@ export default function Hero() {
                 href="/contact"
                 className="inline-flex items-center justify-center bg-[#2C2825] hover:bg-[#C4856A] text-white px-10 py-4 text-sm tracking-widest uppercase transition-all duration-[400ms] ease-out hover:shadow-lg hover:-translate-y-0.5"
               >
-                Inquire
+                Get in Touch
               </Link>
               <Link
-                href="/portfolio"
+                href="/about"
                 className="inline-flex items-center justify-center border border-[#2C2825]/30 hover:border-[#2C2825] text-[#2C2825] px-10 py-4 text-sm tracking-widest uppercase transition-all duration-[400ms] ease-out hover:shadow-sm"
               >
-                Portfolio
+                My Story
               </Link>
             </motion.div>
 
-            {/* Locations */}
             <motion.p
               className="mt-12 text-xs tracking-[0.3em] uppercase text-[#4A4543]/50"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1 }}
             >
-              Rome · Cannes · Mykonos · Dubai · Riyadh
+              Dubai · Milan · New York · China
             </motion.p>
           </motion.div>
 
@@ -86,14 +85,13 @@ export default function Hero() {
           >
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
-                src="/images/alessia/hero-mykonos.jpg"
+                src="/images/alessia/professional-blazer.png"
                 alt="Alessia Forcellati"
                 fill
                 className="object-cover"
                 priority
               />
             </div>
-            {/* Decorative elements */}
             <div className="absolute -bottom-4 -left-4 w-24 h-24 border border-[#C4856A]/30 hidden lg:block" />
             <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#C4856A]/10 hidden lg:block" />
           </motion.div>

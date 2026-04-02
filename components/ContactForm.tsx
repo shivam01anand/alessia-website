@@ -57,7 +57,7 @@ export default function ContactForm() {
           I&apos;m interested in *
         </label>
         <div className="flex flex-wrap gap-3">
-          {["Events", "Real Estate", "Both"].map((option) => (
+          {["Events", "Real Estate", "Digital & Marketing", "Other"].map((option) => (
             <label key={option} className="cursor-pointer">
               <input
                 type="radio"

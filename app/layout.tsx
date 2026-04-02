@@ -6,9 +6,9 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import LayoutWrapper from "@/components/LayoutWrapper";
 
 export const metadata: Metadata = {
-  title: "Alessia Forcellati | Luxury Event Manager | Dubai",
-  description: "Italian luxury event manager based in Dubai. Trained by Valentino, Chanel, and Dior. Creating unforgettable moments for fashion houses, private clients, and exclusive venues.",
-  keywords: "luxury event manager Dubai, Italian event manager, fashion event management, Dubai events, Valentino events, luxury private events, destination weddings Dubai",
+  title: "Alessia Forcellati | Project Event Manager | Dubai",
+  description: "Project Event Manager at Digital Minds, MC Holding Group. Luxury events, real estate, and global marketing. Based in Dubai.",
+  keywords: "Alessia Forcellati, project event manager Dubai, Digital Minds, MC Holding Group, luxury events Dubai, Dubai real estate",
   authors: [{ name: "Alessia Forcellati" }],
   metadataBase: new URL("https://alessiaforcellati.com"),
   openGraph: {

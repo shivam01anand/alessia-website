@@ -13,13 +13,13 @@ export default function ContactCTA() {
           viewport={{ once: true }}
         >
           <p className="text-xs tracking-[0.3em] uppercase text-[#C4856A] mb-6">
-            Work With Me
+            Connect
           </p>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6">
-            Discuss an Event
+            Let&apos;s Talk
           </h2>
           <p className="text-[#4A4543] max-w-md mx-auto mb-10">
-            Brand activations. Private celebrations. Destination events.
+            Events. Real estate. Global projects. Whatever brings you here.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

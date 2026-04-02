@@ -5,78 +5,26 @@ import { MapPin } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
-const timeline = [
+const offices = [
   {
-    year: "2024",
-    role: "Event Manager",
-    company: "DAW Event Production, Riyadh",
-    description:
-      "Formula E Riyadh, Saudi Founding Day at Diriyah, Ministry of Education events. Managing logistics for the Kingdom's most prestigious occasions.",
+    city: "Dubai",
+    role: "Headquarters",
+    focus: "Events, marketing, and operations",
   },
   {
-    year: "2022–2023",
-    role: "Coordinator & Manager",
-    company: "Addmind Hospitality",
-    description:
-      "Started as coordinator at Babylon DIFC in Dubai, then promoted to Manager at Moni, one of Mykonos' most exclusive private members' clubs.",
+    city: "Milan",
+    role: "Europe",
+    focus: "Fashion and marketing projects",
   },
   {
-    year: "2022",
-    role: "Project Manager",
-    company: "Italia Polo Challenge, Sardinia",
-    description:
-      "Led a 15-day luxury polo event, managing hotels, private transfers, dining, and exclusive experiences for international HNWI guests.",
+    city: "New York",
+    role: "Americas",
+    focus: "PR and media relations",
   },
   {
-    year: "2022",
-    role: "Assistant Project Manager",
-    company: "Vincenzo D'Ascanio Agency",
-    description:
-      "Luxury destination weddings across St. Tropez and Isola d'Elba. Working with one of Italy's most sought-after wedding designers.",
-  },
-  {
-    year: "2019–2022",
-    role: "Assistant Project Manager",
-    company: "IF Experience",
-    description:
-      "Brand events for Valentino, Chanel, Dior, Moncler, and Golden Goose across Rome, Milan, Florence, and Lisbon. This is where fashion-house precision was forged.",
-  },
-  {
-    year: "2017–2022",
-    role: "Staff Coordinator",
-    company: "Private Events & Galas, Rome",
-    description:
-      "Gianvito Rossi gala dinners, LBL corporate events, and exclusive private celebrations. Five years mastering the art of flawless execution.",
-  },
-  {
-    year: "2017",
-    role: "PR Intern",
-    company: "Sottovento Club, Porto Cervo",
-    description:
-      "Where it all began. Sardinia's most legendary nightclub since 1979, the Mediterranean's original temple of la dolce vita.",
-  },
-];
-
-const values = [
-  {
-    title: "Italian Heritage",
-    description:
-      "Born and raised in Rome, educated in communication sciences. Mediterranean warmth and Italian attention to detail are in my DNA.",
-  },
-  {
-    title: "Fashion-House Training",
-    description:
-      "Three years with IF Experience taught me that luxury brands accept nothing less than perfection. Every detail matters.",
-  },
-  {
-    title: "Mediterranean to Gulf",
-    description:
-      "From Porto Cervo to Mykonos to Dubai to Riyadh. I understand how luxury translates across cultures while keeping its soul.",
-  },
-  {
-    title: "Boutique Approach",
-    description:
-      "I don't take on dozens of events. I take on yours. Fully present, personally invested, completely dedicated.",
+    city: "China",
+    role: "Asia",
+    focus: "AI-based products and manufacturing",
   },
 ];
 
@@ -100,14 +48,13 @@ export default function AboutPage() {
             >
               <div className="aspect-[3/4] relative overflow-hidden">
                 <Image
-                  src="/images/alessia/beach-club.jpg"
+                  src="/images/alessia/professional-blazer.png"
                   alt="Alessia Forcellati"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 w-48 h-48 border border-[#C4856A]/30" />
-              <div className="absolute -top-6 -left-6 w-24 h-24 bg-[#C4856A]/10" />
             </motion.div>
 
             {/* Content */}
@@ -121,9 +68,7 @@ export default function AboutPage() {
                 About
               </p>
               <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl mb-8">
-                Alessia
-                <br />
-                Forcellati
+                My Story
               </h1>
               <div className="flex items-center gap-2 text-sm text-[#4A4543] mb-8">
                 <MapPin className="w-4 h-4 text-[#C4856A]" />
@@ -131,21 +76,27 @@ export default function AboutPage() {
               </div>
               <div className="space-y-6 text-[#4A4543] leading-relaxed">
                 <p className="text-lg">
-                  Seven years creating moments for fashion houses, private clients,
-                  and the world&apos;s most demanding venues, from the runways of
-                  Rome to the circuits of Riyadh.
+                  I started in the world of fashion events. Valentino, Chanel, Dior,
+                  Moncler — three years learning that luxury brands accept nothing
+                  less than perfection.
                 </p>
                 <p>
-                  I started at Sottovento in Porto Cervo, where I learned that true
-                  luxury isn&apos;t about showing off. It&apos;s about feeling
-                  extraordinary. From there, I spent three years with IF Experience,
-                  orchestrating events for Valentino, Chanel, Dior, Moncler, and
-                  Golden Goose.
+                  From there I moved into nightlife and hospitality. Sottovento in
+                  Porto Cervo, Moni in Mykonos. Places where the atmosphere is
+                  everything and the details make it legendary.
                 </p>
                 <p>
-                  That fashion-house precision now shapes everything I do, whether
-                  it&apos;s a Formula E activation in Saudi Arabia, a private wedding
-                  in St. Tropez, or an intimate celebration in Dubai.
+                  Along the way, clients started asking me about properties in Dubai.
+                  They trusted my eye, my taste, my understanding of what luxury
+                  actually means when you live in it every day. So I started working
+                  with an Italian real estate agency, freelance, helping people find
+                  their Dubai address.
+                </p>
+                <p>
+                  Today I&apos;m a Project Event Manager at Digital Minds, part of
+                  MC Holding Group — a global luxury tech and marketing company with
+                  offices in Dubai, Milan, New York, and China. I still take on select
+                  private events and real estate clients on the side.
                 </p>
               </div>
             </motion.div>
@@ -155,107 +106,56 @@ export default function AboutPage() {
 
       {/* Quote */}
       <section className="py-24 md:py-32 bg-[#2C2825] text-[#F7F4F0]">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <motion.div
-              className="relative aspect-[4/5] overflow-hidden"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <Image
-                src="/images/alessia/professional-blazer.png"
-                alt="Alessia Forcellati"
-                fill
-                className="object-cover"
-              />
-            </motion.div>
-            <motion.blockquote
-              className="font-serif text-3xl md:text-4xl lg:text-5xl leading-tight text-center lg:text-left"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              The details they notice. The moments they
-              <span className="text-[#C4856A]"> don&apos;t forget</span>.
-            </motion.blockquote>
-          </div>
+        <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
+          <motion.blockquote
+            className="font-serif text-3xl md:text-4xl lg:text-5xl leading-tight"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            The details they notice. The moments they
+            <span className="text-[#C4856A]"> don&apos;t forget</span>.
+          </motion.blockquote>
         </div>
       </section>
 
-      {/* Values */}
+      {/* MC Holding / Digital Minds */}
       <section className="py-24 md:py-32 bg-[#EDE8E1]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <motion.div
-            className="text-center mb-16"
+            className="mb-16"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
             <p className="text-xs tracking-[0.3em] uppercase text-[#C4856A] mb-4">
-              Philosophy
+              Current Role
             </p>
-            <h2 className="font-serif text-4xl md:text-5xl">Approach</h2>
+            <h2 className="font-serif text-4xl md:text-5xl mb-6">
+              Digital Minds · MC Holding Group
+            </h2>
+            <p className="text-[#4A4543] leading-relaxed max-w-2xl">
+              A global luxury tech and marketing group operating across four
+              continents. From AI-powered products to fashion PR, the group
+              brings Italian craftsmanship to global scale.
+            </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-            {values.map((value, index) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {offices.map((office, index) => (
               <motion.div
-                key={value.title}
-                className="bg-[#F7F4F0] p-8 lg:p-10"
+                key={office.city}
+                className="bg-[#F7F4F0] p-6 lg:p-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <h3 className="font-serif text-2xl mb-4 text-[#C4856A]">
-                  {value.title}
-                </h3>
-                <p className="text-[#4A4543] leading-relaxed">
-                  {value.description}
+                <p className="text-xs tracking-[0.2em] uppercase text-[#C4856A] mb-2">
+                  {office.role}
                 </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Timeline */}
-      <section className="py-24 md:py-32 bg-[#F7F4F0]">
-        <div className="max-w-4xl mx-auto px-6 lg:px-12">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <p className="text-xs tracking-[0.3em] uppercase text-[#C4856A] mb-4">
-              Journey
-            </p>
-            <h2 className="font-serif text-4xl md:text-5xl">
-              Rome · Sardinia · Mykonos · Dubai · Riyadh
-            </h2>
-          </motion.div>
-
-          <div className="space-y-12">
-            {timeline.map((item, index) => (
-              <motion.div
-                key={item.year + item.role}
-                className="relative pl-8 border-l-2 border-[#EDE8E1]"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <div className="absolute -left-[9px] top-0 w-4 h-4 bg-[#C4856A] rounded-full" />
-                <p className="text-sm tracking-[0.2em] uppercase text-[#C4856A] mb-2">
-                  {item.year}
-                </p>
-                <h3 className="font-serif text-2xl mb-1">{item.role}</h3>
-                <p className="text-sm text-[#4A4543] mb-3">{item.company}</p>
-                <p className="text-[#4A4543] leading-relaxed">
-                  {item.description}
-                </p>
+                <h3 className="font-serif text-2xl mb-2">{office.city}</h3>
+                <p className="text-[#4A4543] text-sm">{office.focus}</p>
               </motion.div>
             ))}
           </div>
@@ -263,7 +163,7 @@ export default function AboutPage() {
       </section>
 
       {/* Education */}
-      <section className="py-16 bg-[#EDE8E1]">
+      <section className="py-16 bg-[#F7F4F0]">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
           <p className="text-xs tracking-[0.3em] uppercase text-[#C4856A] mb-4">
             Education
@@ -272,7 +172,7 @@ export default function AboutPage() {
             Laurea in Scienze della Comunicazione
           </h3>
           <p className="text-[#4A4543]">
-            Università degli Studi eCampus · 2020–2023
+            Universit&agrave; degli Studi eCampus · 2020–2023
           </p>
         </div>
       </section>
@@ -286,17 +186,16 @@ export default function AboutPage() {
             viewport={{ once: true }}
           >
             <h2 className="font-serif text-4xl md:text-5xl mb-8">
-              Let&apos;s Create Together
+              Let&apos;s Connect
             </h2>
             <p className="text-[#F7F4F0]/70 mb-10 max-w-xl mx-auto">
-              Whether it&apos;s a brand activation, private celebration, destination
-              wedding, or something entirely unique.
+              Events, real estate, or global projects — I&apos;d love to hear from you.
             </p>
             <Link
               href="/contact"
               className="inline-block bg-[#C4856A] hover:bg-[#D4A08A] text-white px-8 py-4 text-sm tracking-widest uppercase transition-all duration-300"
             >
-              Inquire
+              Get in Touch
             </Link>
           </motion.div>
         </div>
