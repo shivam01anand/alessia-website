@@ -4,16 +4,10 @@ import { motion } from "framer-motion";
 
 const milestones = [
   {
-    period: "2017 — 2020",
-    title: "Fashion & Luxury Events",
+    period: "2025 — Present",
+    title: "Digital Minds · MC Holding",
     description:
-      "Styled events for Valentino, Chanel, Dior, and Moncler across Rome, Milan, and Florence.",
-  },
-  {
-    period: "2020 — 2022",
-    title: "Nightlife & Hospitality",
-    description:
-      "From Sottovento in Porto Cervo to Moni in Mykonos — curating atmospheres that became destinations.",
+      "Project Event Manager at a global luxury tech and marketing group. Dubai, Milan, New York, China.",
   },
   {
     period: "2022 — 2025",
@@ -22,10 +16,16 @@ const milestones = [
       "Clients started asking for properties. A natural evolution — from hosting them to finding their Dubai address.",
   },
   {
-    period: "2025 — Present",
-    title: "Digital Minds · MC Holding",
+    period: "2020 — 2022",
+    title: "Nightlife & Hospitality",
     description:
-      "Project Event Manager at a global luxury tech and marketing group. Dubai, Milan, New York, China.",
+      "From Sottovento in Porto Cervo to Moni in Mykonos — curating atmospheres that became destinations.",
+  },
+  {
+    period: "2017 — 2020",
+    title: "Fashion & Luxury Events",
+    description:
+      "Styled events for Valentino, Chanel, Dior, and Moncler across Rome, Milan, and Florence.",
   },
 ];
 
