@@ -113,10 +113,10 @@ export default function Navigation() {
               <div className="px-6 py-8 border-t border-[#EDE8E1]">
                 <p className="text-sm text-[#4A4543]">Dubai, UAE</p>
                 <a
-                  href="mailto:alexforce@yahoo.it"
+                  href="mailto:alessiaforcellati@yahoo.com"
                   className="text-sm text-[#C4856A] hover-underline"
                 >
-                  alexforce@yahoo.it
+                  alessiaforcellati@yahoo.com
                 </a>
               </div>
             </div>

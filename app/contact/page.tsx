@@ -14,8 +14,8 @@ const contactMethods = [
   {
     icon: Mail,
     label: "Email",
-    value: "alexforce@yahoo.it",
-    href: "mailto:alexforce@yahoo.it",
+    value: "alessiaforcellati@yahoo.com",
+    href: "mailto:alessiaforcellati@yahoo.com",
   },
   {
     icon: Instagram,
